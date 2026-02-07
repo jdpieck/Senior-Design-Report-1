@@ -1,0 +1,30 @@
+applicators: 
+  - title: YAML Demo File 1
+    path: "c clamp sketch.png"
+    caption: 
+    desciption: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus orci leo, pretium vel erat et, varius sollicitudin mi.
+
+  - title: YAML Demo File 2
+    path: "c clamp sketch.png"
+    caption: 
+    desciption: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus orci leo, pretium vel erat et, varius sollicitudin mi.
+
+
+jig:
+  - title: YAML Demo File 3
+    path: "c clamp sketch.png"
+    caption: 
+    desciption: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus orci leo, pretium vel erat et, varius sollicitudin mi. 
+
+
+lamina-clamp:
+  - title: YAML Demo File 4
+    path: "c clamp sketch.png"
+    caption: 
+    desciption: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus orci leo, pretium vel erat et, varius sollicitudin mi. 
+
+feed: 
+  - title: YAML Demo File 5
+    path: "c clamp sketch.png"
+    caption: 
+    desciption: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus orci leo, pretium vel erat et, varius sollicitudin mi. 
