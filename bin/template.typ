@@ -13,8 +13,14 @@
   
   set grid(
     fill: none,
-    gutter: 1em
-    // inset: .9em,
+    gutter: 1em,
+    inset: .9em,
+    // stroke: (x, y) => (
+    //   left: if x == 1 { 0pt } else { gray },
+    //   right: gray,
+    //   top: if y == 0 {black} else if y == 1 { gray } else if y == 0 {none} else {black},
+    //   bottom: gray,
+    // ),
   )
   set heading(
     numbering: none,
@@ -22,13 +28,13 @@
   )
   
   grid(
-    columns: (1fr, 1fr),
+    columns: (2fr, 1fr),
     ..entries.map( it => {
        (        
         [
           #figure(
             image("../images/" + it.path),
-            caption: []
+            caption: it.title
           ) #label(it.path.replace(" ", "-").split(".").at(0))
         ],
         stack(
@@ -39,6 +45,19 @@
       )
     }).flatten() 
   )
+
+  // set page(columns: 2)
+  // for it in entries [
+  //   #block(breakable: false)[
+  //   #heading(it.title, level:3)
+  //   #it.desciption
+  //   #figure(
+  //     image("../images/" + it.path),
+  //     caption: it.title
+  //   ) #label(it.path.replace(" ", "-").split(".").at(0))
+      
+  //   ]
+  // ]
 }
 
 #let accent = rgb("#063e7e")

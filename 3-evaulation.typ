@@ -1,76 +1,10 @@
 #import "bin/template.typ": *
 
-#show table: set par(justify: false) 
-#show table: set align(left)
-#show table.cell.where(y: 0): set text(white, weight: "bold")
-#show table.cell.where(y: 0): it => math.bold(it)
-// show table.cell.where(y: 1): set table.cell(fill: blue)
-#set table(
-fill: (x,y) =>
-  if y == 0 {accent},
-// stroke: frame(none),
-// stroke: (x,y) => (
-  // left: if x == 1 {gray}
-  // )
-)
-#show table.cell.where(x: 0): set align(center)    
-  
-#show table: set list(indent: .3em)
-#show table.cell.where(x: 0): set align(center + horizon)
-#show table.cell.where(y: 0): set align(center + horizon)
-#set table(inset: .6em)
+== Adhesive Choice <Adhesive-Choice>
+In order to explore potential solutions for the glue jig we had to first determine the limitations of potential adhesives. The adhesive types were narrowed down to 3 due to the material limitations of ABS plates and polycarbonate film. The three adhesive types we determined to be the best for the project are two-part epoxy, cement, and solvent.
 
-#figure(
-  table(
-    columns: (4em, 1fr, 1fr, 1fr), 
-    rows: 3,
-    none, 
-    [Must Have], [Should Have], [Nice to Have],
-    rotate(-90deg)[System Functions],
-    [
-      - Predictable adhesive application
-        - Predictable alignment
-      - No leaking
-        - Capable of handling >10psig
-      - Does not block channels
-    ],
-    [
-      - Apply lamina
-      - Correct alignment
-        - 0.5mm tolerance
-    ],
-    [
-      - Same gluing mechanism for both team 14 and team 2
-    ],
-    rotate(-90deg)[System Qualities],
-    [
-      - Predictable curing time
-      - Reliable
-        - 1000+ reps
-    ],
-    [
-      - Speedy cycle time
-      - Large batch size (2-4)
-      - Small form factor 
-        - fits on bench-top
-      - Non-toxic glue
-    ],
-    [
-      - Fast curing time
-      - Cheap
-      - Integrates with team 2
-    ],
-  ),
-  caption: [System requirements, broken into functions and qualities. ]
-)
+== Technical Difficulties
+The primary technical issue we've faced as we've evaluated solutions has been our adhesive selection. Our mechanism design is entirely dependent on our adhesive choice's viscosity, material compatibility, evaporation time, and toxicity. The challenge of properly securing the adhesive has also presented issues. We need to select a method of holding the modules in place that doesn't interfere with the application of adhesive. The module ridges are only 0.5mm tall which has motivated us into exploring protruding application designs such as ridged rollers, stamps, or stencil adjacent techniques. Additionally, our modules are passing through multiple systems between loading, adhesive application, lamina application, and removal to cure. Creating a feed that successfully hands off the modules between mechanisms is challenging especially when we are unsure of our final mechanisms selections, due to uncertainty around adhesive choice.
 
-== Evaluation Criteria Key
-#let data = csv("criteria.csv")
 
-#figure(
-table(
-  columns: data.first().len(),
-  ..data.flatten()
-),
-caption: [Preliminary evaluation scale (from 1 to 10) for criteria.]
-) <criteria>
+#include "3.1-criteria.typ"

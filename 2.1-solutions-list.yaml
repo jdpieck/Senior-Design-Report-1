@@ -1,30 +1,41 @@
 applicators: 
-  - title: YAML Demo File 1
-    path: "c clamp sketch.png"
-    caption: 
-    desciption: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus orci leo, pretium vel erat et, varius sollicitudin mi.
+  - title: Roller
+    path: "RollerApplication_Peter.png" 
+    desciption: In this scenario, the MPHX module is passed over a roller which uniformly applies adhesive over the module's ridges. The roller sits in a trough of adhesive which allows it to be re-coated as it spins. The use of a roller benefits form the use of low viscocity adheives.
 
-  - title: YAML Demo File 2
-    path: "c clamp sketch.png"
-    caption: 
-    desciption: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus orci leo, pretium vel erat et, varius sollicitudin mi.
+  - title: Stamp
+    path: "Stamp_Peter.png" 
+    desciption: There are two use cases for a stamp. One stamps adhesive directly to the MPHX module and the other case would be to stamp the pattern of the ridges onto the lamina which would subsequently by applied to the module. The stamp would be dipped into a soaked sponge or bed of adhesive between cycles.
 
 
 jig:
-  - title: YAML Demo File 3
-    path: "c clamp sketch.png"
-    caption: 
+  - title: Channel Slot
+    path: "SlotChannel_Peter.png" 
+    desciption: The MPHX modules have rails on the sides which can be used to secure them. This design uses a tray with open-face slots that allow the modules to slide in and out. The open face allows adhesive to be applied while the modules remain fixed.
+    
+  - title: Vacuum Chuck 
+    path: "Vacuum_Leah.png" 
     desciption: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus orci leo, pretium vel erat et, varius sollicitudin mi. 
 
+  - title: Side Clips 
+    path: "side clips.png" 
+    desciption: An alternate solution for holding the MPHX in place is to use clips to hold onto the side railing. The clips would be placed in the center of the MPHX acting similar to the clips at the top of clipboards. A downward pressure on the clip would release the side clips hold. To input a plate, an individual would slide the MPHX plate onto the carriage tray while applying pressure to the clips holding them up. This design emphasizes on the holding of the railing to keep the MPHX still while adhesive is applied.
 
 lamina-clamp:
-  - title: YAML Demo File 4
-    path: "c clamp sketch.png"
-    caption: 
-    desciption: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus orci leo, pretium vel erat et, varius sollicitudin mi. 
+  - title: C-Clamp
+    path: "c clamp sketch.png" 
+    desciption: To keep the lamina and adhessive together during the drying process a c-clamp (or two) is proposed to be used to hold the MPHX plate, its holder, and the lamina together. This would keep constant even pressure on the plate as the adhessive dries preventing bowing and ensuring an accurate seal.
 
 feed: 
-  - title: YAML Demo File 5
-    path: "c clamp sketch.png"
-    caption: 
-    desciption: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus orci leo, pretium vel erat et, varius sollicitudin mi. 
+
+  - title: Powered Rollers
+    path: "PoweredRollers_Peter.png" 
+    desciption: This feed mechanism uses powered rollers to move a tray of MPHX modules along a track. The rollers could span the length of the tray or be canitlevered as pictured. 
+
+  - title: Powered Belt
+    path: "PoweredBelt_Peter.png" 
+    desciption: This feed mechansims moves a tray of MPHX modules along the track using two continuous, driven belts. Belts would be mounted on intermittent pulleys.
+
+  - title: Locking Belt
+    path: "LockingBelt_Peter.png" 
+    desciption: This feed mechanism is very similar to the powered roller case, except, it incorporates a locking mechanism on the belt to assit in forcing the tray of modules through the systesm. The locking mechanism could take many forms such as the wedges pictured. 
