@@ -24,7 +24,7 @@
 = Exploration of Alternative Solutions
 #include "2-solutions.typ"
 
-= Discussion and Trade-Offs Analyses for Candidate Designs
+= Discussion and Trade-Offs Analyses for Candidate Designs <Evaluations> 
 #include "3-evaulation.typ"
 
 = Design Concepts Selected for Investigation

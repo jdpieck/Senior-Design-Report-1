@@ -28,9 +28,9 @@
   )
   
   grid(
-    columns: (2fr, 1fr),
+    columns: (2fr, 2fr),
     ..entries.map( it => {
-       (        
+       (  
         [
           #figure(
             image("../images/" + it.path),
@@ -40,8 +40,8 @@
         stack(
           heading(it.title, level:3),
           .7em,
-          it.desciption
-        )
+          it.description
+        ),
       )
     }).flatten() 
   )
