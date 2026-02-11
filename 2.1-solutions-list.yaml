@@ -15,6 +15,10 @@ applicators:
     path: "Squeegee_Leah.png" 
     description: Squeegee applies a uniform thickness of adhesive on the lamina. Squeegee is controlled my motorized sliding jig. 
 
+  - title: Screenprint 
+    path: "ScreenprintingAdhesive.jpg" 
+    description: This application method is very similar to the typical screenprinting process, but by substituting ink for our chosen adhesive. On a prepared and otherwise opaque silkscreen, there are permeable areas in the shape of the MPHX ridges. Using a squeegee, the adhesive will permeate the membrane and apply a set amount of adhesive to the lamina in our desired application pattern. 
+
     
 jig:
   - title: Channel Slot
@@ -42,7 +46,10 @@ lamina-clamp:
     path: "TopClampingPannel_Leah.png"
     description: Uniform compression of the assembly ensured by a flat pressure plate clamped at discrete points with any type of clamping mechanism. 
 
-    
+  - title: Side Flip Clamps
+    path: "SideFlipClamps.jpg" 
+    description: In a very similar method to the Side Clips in the Jig section, clamps attached to hinges on the side of the MPHX holder would fold up and apply pressure to the lamina along the rails to keep both in place while the adhesive cures. They would then be folded back down in order to release the now completed MPHX-lamina module.
+
 feed: 
 
   - title: Powered Rollers
@@ -56,3 +63,7 @@ feed:
   - title: Locking Belt
     path: "LockingBelt_Peter.png" 
     description: This feed mechanism is very similar to the powered roller case, except it incorporates a locking mechanism on the belt to assist in forcing the tray of modules through the system. The locking mechanism could take many forms, such as the wedges pictured. 
+
+  - title: Hand Delivered
+    path: "HandDelivered.jpg" 
+    description: This feed mechanism is the most simple option, and involves a human operator picking up and moving the MPHX modules and jig between the different subsystems by hand.
