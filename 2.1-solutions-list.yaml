@@ -22,7 +22,6 @@ applicators:
   - title: Spray
     path: "Spray_Patrick.png"
     description: Adhesive is sprayed over the entire module. Requires low viscosity adhesive. Two alternative
-
     
 jig:
   - title: Channel Slot
@@ -37,10 +36,31 @@ jig:
     path: "side clips.png" 
     description: An alternate solution for holding the MPHX in place is to use clips to hold onto the side railing. The clips would be placed in the center of the MPHX, acting similarly to the clips at the top of clipboards. A downward pressure on the clip would release the side clips hold. To input a plate, an individual would slide the MPHX plate onto the carriage tray while applying pressure to the clips holding it up. This design emphasizes the holding of the railing to keep the MPHX still while the adhesive is applied.
 
+lamina-application:
+  - title: Hand Application
+    path: "HandLaminaApplication.jpg" 
+    description: This method of lamina application involves a human operator physically placing a sheet of lamina on top of the MPHX module and holding plate.
+    
+  - title: Roller System
+    path: "RollerLaminaApplication.jpg" 
+    description: Similar to the paper feeding mechanism of a printer, this method of lamina application would involve feeding of a sheet of lamina between a set of rollers, placing the sheet of lamina on top of the MPHX and holding plate as it moves underneath the rollers.
+    
+  - title: Unroll Mechanism 
+    path: "UnrollLaminaApplication.jpg" 
+    description: In this setup, the lamina starts in a long sheet on a roll supported by a shaft over the feed mechanism. The one end of the lamina is secured to one end of the holding plate, and the roll is unspooled as the MPHX module and holding plate move past underneath it. 
+
+  - title: Ramp 
+    path: "RampLaminaApplication.jpg" 
+    description: A sheet of lamina is suspended over a ramp above the feed mechanism. As the MPHX module and holding plate approaches the ramp, the clipboard-like mechanism holding the lamina is released, allowing the lamina to slide down the ramp. At the end of the ramp, the lamina lands on top of the holding plate and MPHX module as the feed machanism move past and underneath via the feed system.
+
+  - title: Rotating Frame
+    path: "FrameLaminaApplication.jpg" 
+    description: A sheet of lamina begins in a square frame slightly less than perpendicular to the MPHX module and holding plate. When the module is in the correct position, the frame rotates on a hinge and sets the lamina on top. There is a lip on the bottom of the frame that is narrow enough to prevent the lamina from falling through, but wide enough to allow it to pass over the holding plate without touching. The hinge of the frame is positioned below the plane of the feed mechanism, to fully place the lamina on top of the MPHX module and release it from the frame.
+    
 lamina-clamp:
   - title: C-Clamp
     path: "c clamp sketch.png" 
-    description: To keep the lamina and adhesive together during the drying process, a C-clamp (or two) is proposed to be used to hold the MPHX plate, its holder, and the lamina together. This would keep constant even pressure on the plate as the adhesive dries, preventing bowing and ensuring an accurate seal.
+    description: To keep the lamina and adhesive together during the drying process, a C-clamp (or two) is proposed to be used to hold the MPHX plate, its holder, and the lamina together.
     
   - title: Alignment Pins
     path: "AignmentPins_Leah.png" 

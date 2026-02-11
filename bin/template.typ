@@ -63,25 +63,46 @@
 #let decision-matrix(path) = {
   let data = csv("../matricies/" + path, delimiter: "\t")
   data.last().last() = data.last().last().split(",").at(0)
+  let num-rows = data.len()
+  let invert(int) = num-rows + int
   
   set text(9pt)
   set par(justify: false)
-  // [
-    // #data.at(0)
-    // #data.at(0).filter(it => it != "")
-    // #data.last()
 
-    // #let n = 0
-    // #while n < data.last().len() {
-    //   if data.last().at(n) == "" {[#n]}
-    //   n = n + 1
-    // }
-    
-  // ]
-  figure(
-    caption: [],
+  set table(
+    stroke: (x, y) => (
+      bottom: {
+        // if y > 1 {black}
+        if (
+          y == 0 or
+          y == 1 or 
+          y == invert(-1) or
+          y == invert(-2) or
+          y == invert(-4)
+            ) {black} 
+      },
+      right: {
+        if y > 0 and y < invert(-3) {
+          if calc.rem(x, 2) == 1 {black}
+          else {black + .3pt}
+        }
+        if y <= 0 or y > invert(-4) {
+          if calc.rem(x, 2) == 0 {black}
+        }
+      }
+    )
+  )
+
+  show table.cell.where(y: 0): strong
+  show table.cell.where(x: 0): strong
+  show table.cell.where(x: 0): set align(left)
+  // show table.cell.where(y: invert(-2)): set table.cell(inset: 3em)
+  show table.cell.where(y: invert(-2)): it => {v(-0.3em) + it }
+
+  [#figure(
+    caption: data.first().first() + " Selection Matrix",
     table(
-      columns: (15em, ..(3em, )*(data.at(0).len() - 1)),
+      columns: (15em, 3em, ..(3em, )*(data.at(0).len() - 2)),
       table.header(..data
         .at(0)
         .filter(it => it != "")
@@ -94,7 +115,7 @@
             .filter(it => it != "")
             .map(it => table.cell(colspan: 2, it))
     )
-  )
+  ) #label(path.split(".").at(0) + "-matrix")]
 }
 
 #let accent = rgb("#063e7e")
@@ -276,7 +297,9 @@
   pagebreak()
   outline(title: "Document Outline")
 
+  // outline(title: "Figures & Tables", target: figure)
   outline(title: "Figures", target: figure.where(kind: image))
+  outline(title: "Tables", target: figure.where(kind: table))
 
   pagebreak()  
   body // Main body

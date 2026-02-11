@@ -22,10 +22,10 @@ fill: (x,y) =>
 #figure(
   table(
     columns: (4em, 1fr, 1fr, 1fr), 
-    rows: 3,
+    // rows: 3,
     none, 
     [Must Have], [Should Have], [Nice to Have],
-    rotate(-90deg)[System Functions],
+    rotate(reflow: true, -90deg)[System Functions],
     [
       - Predictable adhesive application
         - Predictable alignment
