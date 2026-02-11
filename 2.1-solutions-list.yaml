@@ -19,6 +19,10 @@ applicators:
     path: "ScreenprintingAdhesive.jpg" 
     description: This application method is very similar to the typical screenprinting process, but by substituting ink for our chosen adhesive. On a prepared and otherwise opaque silkscreen, there are permeable areas in the shape of the MPHX ridges. Using a squeegee, the adhesive will permeate the membrane and apply a set amount of adhesive to the lamina in our desired application pattern. 
 
+  - title: Spray
+    path: "Spray_Patrick.png"
+    description: Adhesive is sprayed over the entire module. Requires low viscosity adhesive. Two alternative
+
     
 jig:
   - title: Channel Slot

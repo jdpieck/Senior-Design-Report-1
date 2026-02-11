@@ -60,6 +60,43 @@
   // ]
 }
 
+#let decision-matrix(path) = {
+  let data = csv("../matricies/" + path, delimiter: "\t")
+  data.last().last() = data.last().last().split(",").at(0)
+  
+  set text(9pt)
+  set par(justify: false)
+  // [
+    // #data.at(0)
+    // #data.at(0).filter(it => it != "")
+    // #data.last()
+
+    // #let n = 0
+    // #while n < data.last().len() {
+    //   if data.last().at(n) == "" {[#n]}
+    //   n = n + 1
+    // }
+    
+  // ]
+  figure(
+    caption: [],
+    table(
+      columns: (15em, ..(3em, )*(data.at(0).len() - 1)),
+      table.header(..data
+        .at(0)
+        .filter(it => it != "")
+        .map(it => table.cell(colspan: 2, it))
+      ),
+      ..data.at(1).map(it => rotate(reflow: true, 90deg, it)),
+      ..data.slice(2, -3).flatten(),
+      ..data.slice(-3)
+            .flatten()
+            .filter(it => it != "")
+            .map(it => table.cell(colspan: 2, it))
+    )
+  )
+}
+
 #let accent = rgb("#063e7e")
 
 #let template(
