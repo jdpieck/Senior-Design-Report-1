@@ -98,7 +98,8 @@
   show table.cell.where(x: 0): strong
   show table.cell.where(x: 0): set align(left)
   show table.cell: set align(horizon)
-  // show table.cell.where(y: invert(-2)): set table.cell(inset: 3em)
+  show table.cell.where(y: 1): set align(bottom)
+// show table.cell.where(y: invert(-2)): set table.cell(inset: 3em)
   show table.cell.where(y: invert(-2)): it => {v(-0.3em) + it }
   show table.cell.where(x: 0, y: 1): it => align(bottom, rotate(reflow: true,270deg, it))
 
@@ -303,6 +304,15 @@
   // outline(title: "Figures & Tables", target: figure)
   outline(title: "Figures", target: figure.where(kind: image))
   outline(title: "Tables", target: figure.where(kind: table))
+
+  heading(level: 1, numbering: none, [Key Terms])
+  terms(..csv("../def.csv").sorted(), separator: [ -- ])
+  // show grid.cell.where(x:0): set align(right) 
+  show grid.cell.where(x:0): strong
+  grid(
+    columns: 2,
+    gutter: 1%,
+  ..csv("../def.csv").sorted().flatten())
 
   pagebreak()  
   body // Main body

@@ -2,4 +2,12 @@ The goal of this project is to create a glue-dispensing jig to aid in the assemb
 == Project Timeline
 table for all tasks in the quarter (or alternate way for identification of tasks for this quarter) (table and Gantt chart should match)
 
-insert Gantt Chart
+#page(
+  width: auto,
+  height: auto,
+  footer: none,
+  header: none,
+  margin: 0pt,
+
+  image("bin/Report Cover.svg") // replace path to gantt chart
+)

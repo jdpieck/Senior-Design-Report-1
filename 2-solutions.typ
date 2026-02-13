@@ -18,7 +18,7 @@ The adhesive application subsystem is used to apply the chosen adhesive to the M
 #solution-grid(yaml("2.1-solutions-list.yaml").applicators)
 
 == Lamina Application Method <Lamina-Application>
-The lamina application subsystem is used to eliminate human error in misaligned and uneven lamina application. It consists of an applicator for the lamina as well as storage for the precut lamina sheets. A set applicator for the lamina will help maintain consistency in bonding as well as uniform plate shape. This subsystem is directly correlated with the adhesive choice since the properties of the adhesive will influence the subsystem's design. It also impacts the jig and how plates can be held during the gluing system.
+The lamina application subsystem is used to eliminate human error in misaligned and uneven lamina application. It consists of an applicator for the lamina as well as storage for the precut lamina sheets. A set applicator for the lamina will help maintain consistency in bonding and provide uniform alignment. This subsystem is directly correlated with the adhesive choice since the properties of the adhesive will influence the subsystem's design. It also impacts the jig and how plates can be held during the gluing system.
 #solution-grid(yaml("2.1-solutions-list.yaml").lamina-application)
 
 == Feed System <Feed>

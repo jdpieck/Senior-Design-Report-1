@@ -17,6 +17,17 @@ These challenges have motivated us to consider application methods that enable t
 == Adhesive Selection
 Given Figure smt from evaluations/criteria tables solvents and 
 
+#let product-specs(path) = {
+  let data = csv("matrices/" + path, delimiter: "\t")
+  // set page(flipped: true)
+  set par(justify: false)
+  table(
+    columns: data.at(0).len(),
+    ..data.flatten()
+  )
+}
+
+#product-specs("glue-specs.csv")
 
 Based on experimental data (cough cough just testing) we chose the XXXX adhesive.
 == Jig Selection

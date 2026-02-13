@@ -17,11 +17,11 @@ For *Solution 2* we chose to investigate the *Plate Stamp* mechanism (@Stamp_Pla
 
 == Lamina Applicator Selection
 // roller and rotating frame
-For the lamina application subsystem, we decided to further develop the *Roller System* (@RollerLaminaApplication) and *Rotating Frame* (@RotatingFrameLaminaApplication). Our priority with the lamina application systems were autonomy, consistency, and accuracy.
+For the lamina application subsystem, we decided to further develop the *Roller System* (@RollerLaminaApplication) and *Rotating Frame* (@RotatingFrameLaminaApplication). Our priority with the lamina application systems were autonomy, lamina application consistency, and lack of glue displacement.
 
-The *Roller System* is our first solution, *Solution 1*. When we were scoring lamina applicators, the roller stood out due to it's high level of automation and reliable application consistency. The rollers also have the potential of sharing the same design as the adhesive applicator meaning that we could potentially save time, money, and space.
+The *Roller System* is our first solution, *Solution 1*. When we were scoring lamina applicators, the roller stood out due to it's high level of automation and its low glue displacement. The rollers also have the potential of sharing the same design as the adhesive applicator meaning that we could potentially save time, money, and space.
 
-The second solution, *Solution 2* is the *Rotating Frame*. This design was picked to be further developed due to its high consistency scoring as well as seemless application?. While being a more manual process compared to the Rollers the rotating frame is arguably less prone to mechanical issues as it wont run into lamina jams.
+The second solution, *Solution 2* is the *Rotating Frame*. This design was picked to be further developed due to its high consistency lamina application scoring as well as glue placement. While being a more manual process compared to the Rollers the rotating frame is arguably less prone to mechanical issues as it wont run into lamina jams.
 
 == Feed Mechanism Selection
 //Locking Roller Belt
@@ -29,8 +29,8 @@ For our system feed mechanism, we chose to only move forward with the *Locking B
 
 == Clamping Mechanism Selection
 //ALignment Pins & Top Clamping
-The two clamping subsystem designs we are developing are the Alignment Pins (@AignmentPins_Leah) and the Top Clamping (@TopClampingPannel_Leah) mechanisms. The clamping mechanism is almost isolated from all other subsystems with the exception of the jig, however it still depends on the before mentioned designs.
+The two clamping subsystem designs we are developing are the Alignment Pins (@AignmentPins_Leah) and the Top Clamping (@TopClampingPannel_Leah) mechanisms. The clamping mechanisms main grading criteria were even pressure distribution, clamping force, and lamina alignment.
 
-The first solution we selected, *Solution 1* is the *Top Clamping* design due to it's high rating for pressure distribution and applied force. The design emphasizes the clamping mechanism itself but lacks in flexibility (scalability, ease of use, and stackability). The top clamping panel design uses a top plate and the jig to hold the modules ensuring the glues accuracy and alignment during the curing process.
+The first solution we selected, *Solution 1* is the *Alignment Pins* design due to their focus on stackability, ease of use, and scalability. The design features average pressure distribution aswell making it a good all around choice. The lamina alignment is achieved through pin holes in the jig holding the modules having a frame sit on top of the sealed module during the curing process.
 
-The second solution we chose, *Solution 2* is the *Alignment Pins* design which almost prioritizes the mirror opposite of the top clamping design. The alignment pins focus on stackability, ease of use, and scalability with average pressure distribution. This is achieved through pin holes in the jig holding the modules having a frame sit on top of the sealed module during the curing process.
+The second solution we chose, *Solution 2* is the *Top Clamping* design due to its high rating for pressure distribution and applied force. The design emphasizes the clamping mechanism itself but lacks in flexibility (scalability, ease of use, and stackability). The top clamping panel design uses a top plate and the jig to hold the modules ensuring the glues accuracy and alignment during the curing process.

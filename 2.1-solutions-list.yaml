@@ -1,7 +1,7 @@
 applicators: 
   - title: Roller
     path: "Roller_Peter.png" 
-    description: "In this scenario, the MPHX plate is passed over a roller, which uniformly applies adhesive over the plate's ridges. The roller sits in a trough of adhesive, which allows it to be re-coated as it spins. The use of a roller benefits from the use of low viscosity adhesives."
+    description: "In this scenario, the MPHX plate is passed over a roller, which uniformly applies adhesive over the plate's ridges. The roller sits in a trough of adhesive, which allows it to be re-coated as it spins. The use of a roller benefits from the use of lower viscosity adhesives."
 
   - title: Dip Bed
     path: "Dip Bed.jpg"
@@ -17,11 +17,11 @@ applicators:
 
   - title: Sponge 
     path: "Sponge_Leah.png" 
-    description: Sponge is used to transfer adhesive from vat of adhesive onto the lamina. Applies a uniform coat over the entire surface. 
+    description: A Sponge is used to transfer adhesive from vat of adhesive onto the lamina. This design applies a uniform coat over the entire surface. 
     
   - title: Squeegee 
     path: "Squeegee_Leah.png" 
-    description: Squeegee applies a uniform thickness of adhesive on the lamina. Squeegee is controlled my motorized sliding jig. 
+    description: A Squeegee applies a uniform thickness of adhesive on the lamina. The queegee is controlled by a motorized sliding jig. 
 
   - title: Screenprint 
     path: "SilkscreenAdhesiveApplication.jpg" 
@@ -29,7 +29,7 @@ applicators:
 
   - title: Spray
     path: "Spray_Patrick.png"
-    description: Low viscosity Adhesive is sprayed over the entire plate. Two alternative designs were considered, one where a single nozzle sprays over a moving plate, and one where several nozzles spray a stationary plate.
+    description: Low viscosity adhesive or solvent is sprayed over the entire plate. Two alternative designs were considered, one where a single nozzle sprays over a moving plate, and one where several nozzles spray a stationary plate.
 
   - title: Dot Stencil
     path: "DotStencil_Patrick.png"
@@ -47,7 +47,7 @@ jig:
 
   - title: Side Clips 
     path: "side clips.png" 
-    description: An alternate solution for holding the MPHX in place is to use clips to hold onto the side railing. The clips would be placed in the center of the MPHX, acting similarly to the clips at the top of clipboards. A downward pressure on the clip would release the side clips hold. To input a plate, an individual would slide the MPHX plate onto the carriage tray while applying pressure to the clips holding it up. This design emphasizes the holding of the railing to keep the MPHX still while the adhesive is applied.
+    description: "An alternate solution for holding the MPHX in place is to use clips to hold onto the side railing. The clips would be placed in the center of the MPHX, acting similarly to the clips at the top of clipboards. A downward pressure on the clip would release the side clip's hold. To input a plate, an individual would slide the MPHX plate onto the carriage tray while applying pressure to the clips holding it up. This design emphasizes the holding of the railing to keep the MPHX still while the adhesive is applied."
 
   - title: Pull Mechanism
     path: "Screw Clamp.jpg"
@@ -55,7 +55,7 @@ jig:
     
   - title: Screw Clamp
     path: "Screw Clamp.jpg"
-    description: Uses traditional machine screws to hold the plate in place. A verity of different screws could be used to create different head profiles
+    description: Uses traditional machine screws to hold the plate in place. A variety of different screws could be used to create different head profiles
 
 lamina-application:
   - title: Hand Application
@@ -107,7 +107,7 @@ feed:
 
   - title: Locking Belt
     path: "LockingBelt_Peter.png" 
-    description: This feed mechanism is very similar to the powered roller case, except it incorporates a locking mechanism on the belt to assist in forcing the tray of plates through the system. The locking mechanism could take many forms, such as the wedges pictured. 
+    description: This feed mechanism is very similar to the powered belt case, except it incorporates a locking mechanism on the belt to assist in forcing the tray of plates through the system. The locking mechanism could take many forms, such as the wedges pictured. 
 
   - title: Hand Delivered
     path: "HandFeed.jpg" 
