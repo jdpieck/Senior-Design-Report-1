@@ -5,7 +5,7 @@
   class: "EME-185A/B", 
   team-number: "17",
   project-name: "Glue Dispensing Jig for Novel Polymer Heat Exchanger Fin Plates", 
-  ta-contact: "Xiangpu Wang",
+  ta-contact: "Angel Rodas",
   professor-contact: "Jonathon Schofield", 
   authors: (
     (name: "Patrick Abrash", id: "920893423"),
@@ -27,7 +27,7 @@
 
 #pagebreak()
 = Discussion and Trade-Offs Analyses for Candidate Designs <Evaluations> 
-#include "3-evaulation.typ"
+#include "3-evaluation.typ"
 
 #pagebreak()
 = Design Concepts Selected for Investigation
@@ -39,8 +39,3 @@
 
 = Objective Statement
 #include "6-objective.typ"
-
-= Project Timeline
-// add figure to PDF of final timeline
-
-

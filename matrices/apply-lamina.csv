@@ -1,0 +1,11 @@
+Lamina Applicator		Hand Apply		Roller Mechanism		Slide off Ramp		Rotating Frame	
+Mechanism	Multiplier	Unweighted	Weighted	Unweighted	Weighted	Unweighted	Weighted	Unweighted	Weighted
+Consistently apply lamina	10	8	80	8	80	6	60	10	100
+Easy manufacturing	4	10	40	5	20	8	32	4	16
+Does not disturb glue placement	8	10	80	9	72	7	56	10	80
+Automation	8	0	0	10	80	7	56	6	48
+Size	4	10	40	5	20	8	32	4	16
+Cost	3	10	30	5	15	7	21	5	15
+Totals		270		287		257		275	
+Rank		3		1		4		2	
+Continue?		N/A		Develop		No		Develop	

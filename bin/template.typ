@@ -15,6 +15,7 @@
     fill: none,
     gutter: 1em,
     inset: .9em,
+    // stroke: black
     // stroke: (x, y) => (
     //   left: if x == 1 { 0pt } else { gray },
     //   right: gray,
@@ -31,12 +32,10 @@
     columns: (2fr, 2fr),
     ..entries.map( it => {
        (  
-        [
-          #figure(
-            image("../images/" + it.path),
+        [#figure(
+          image("../images/" + it.path),
             caption: it.title
-          ) #label(it.path.replace(" ", "-").split(".").at(0))
-        ],
+          ) #label(it.path.replace(" ", "-").split(".").at(0))],
         stack(
           heading(it.title, level:3),
           .7em,
@@ -61,7 +60,7 @@
 }
 
 #let decision-matrix(path) = {
-  let data = csv("../matricies/" + path, delimiter: "\t")
+  let data = csv("../matrices/" + path, delimiter: "\t")
   data.last().last() = data.last().last().split(",").at(0)
   let num-rows = data.len()
   let invert(int) = num-rows + int
@@ -96,13 +95,15 @@
   show table.cell.where(y: 0): strong
   show table.cell.where(x: 0): strong
   show table.cell.where(x: 0): set align(left)
+  show table.cell: set align(horizon)
   // show table.cell.where(y: invert(-2)): set table.cell(inset: 3em)
   show table.cell.where(y: invert(-2)): it => {v(-0.3em) + it }
+  show table.cell.where(x: 0, y: 1): it => align(bottom, rotate(reflow: true,270deg, it))
 
   [#figure(
     caption: data.first().first() + " Selection Matrix",
     table(
-      columns: (15em, 3em, ..(3em, )*(data.at(0).len() - 2)),
+      columns: (14em, 3em, ..(3em, )*(data.at(0).len() - 2)),
       table.header(..data
         .at(0)
         .filter(it => it != "")

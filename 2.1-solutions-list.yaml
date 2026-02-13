@@ -1,11 +1,19 @@
 applicators: 
   - title: Roller
-    path: "RollerApplication_Peter.png" 
-    description: "In this scenario, the MPHX module is passed over a roller, which uniformly applies adhesive over the module's ridges. The roller sits in a trough of adhesive, which allows it to be re-coated as it spins. The use of a roller benefits from the use of low viscosity adhesives."
+    path: "Roller_Peter.png" 
+    description: "In this scenario, the MPHX plate is passed over a roller, which uniformly applies adhesive over the plate's ridges. The roller sits in a trough of adhesive, which allows it to be re-coated as it spins. The use of a roller benefits from the use of low viscosity adhesives."
 
-  - title: Stamp
-    path: "Stamp_Peter.png" 
-    description: There are two use cases for a stamp. One stamps adhesive directly to the MPHX module, and the other case would be to stamp the pattern of the ridges onto the lamina, which would subsequently by applied to the module. The stamp would be dipped into a soaked sponge or bed of adhesive between cycles.
+  - title: Dip Bed
+    path: "Dip Bed.jpg"
+    description: Dips the plate into the adhesive
+    
+  - title: Stamp onto Plate
+    path: "Stamp_Plate.png" 
+    description: This version of the stamp design stamps adhesive directly to the MPHX plate. The stamp itself has contours which match the ridges of the plate where adhesive should be applied. The stamp would be dipped into a soaked sponge or bed of adhesive between cycles.
+
+  - title: Stamp onto Lamina
+    path: "Stamp_Lamina.png" 
+    description: "This verison of the stamp design stamps the pattern of the ridges directly to the lamina. The lamina would then be placed on top of the plate's ridges. Between cylcles, the stamp would lower into a bed of adhesive."
 
   - title: Sponge 
     path: "Sponge_Leah.png" 
@@ -16,17 +24,22 @@ applicators:
     description: Squeegee applies a uniform thickness of adhesive on the lamina. Squeegee is controlled my motorized sliding jig. 
 
   - title: Screenprint 
-    path: "ScreenprintingAdhesive.jpg" 
+    path: "SilkscreenAdhesiveApplication.jpg" 
     description: This application method is very similar to the typical screenprinting process, but by substituting ink for our chosen adhesive. On a prepared and otherwise opaque silkscreen, there are permeable areas in the shape of the MPHX ridges. Using a squeegee, the adhesive will permeate the membrane and apply a set amount of adhesive to the lamina in our desired application pattern. 
 
   - title: Spray
     path: "Spray_Patrick.png"
-    description: Adhesive is sprayed over the entire module. Requires low viscosity adhesive. Two alternative
+    description: Low viscosity Adhesive is sprayed over the entire plate. Two alternative designs were considered, one where a single nozzle sprays over a moving plate, and one where several nozzles spray a stationary plate.
+
+  - title: Dot Stencil
+    path: "DotStencil_Patrick.png"
+    description: A stencil consisting of many small holes in the shape of the channels onto the lamina. A squeegee or simiar device would evenly apply glue through the stencil.
+    
     
 jig:
   - title: Channel Slot
     path: "SlotChannel_Peter.png" 
-    description: The MPHX modules have rails on the sides, which can be used to secure them. This design uses a tray with open-face slots that allow the modules to slide in and out. The open face allows adhesive to be applied while the modules remain fixed.
+    description: The MPHX plates have rails on the sides, which can be used to secure them. This design uses a tray with open-face slots that allow the plates to slide in and out. The open face allows adhesive to be applied while the plates remain fixed.
     
   - title: Vacuum Chuck 
     path: "Vacuum_Leah.png" 
@@ -36,31 +49,43 @@ jig:
     path: "side clips.png" 
     description: An alternate solution for holding the MPHX in place is to use clips to hold onto the side railing. The clips would be placed in the center of the MPHX, acting similarly to the clips at the top of clipboards. A downward pressure on the clip would release the side clips hold. To input a plate, an individual would slide the MPHX plate onto the carriage tray while applying pressure to the clips holding it up. This design emphasizes the holding of the railing to keep the MPHX still while the adhesive is applied.
 
+  - title: Pull Mechanism
+    path: "Screw Clamp.jpg"
+    description: puts the plate under tension, preventing the plate from moving while remaining completely flush. 
+    
+  - title: Screw Clamp
+    path: "Screw Clamp.jpg"
+    description: Uses traditional machine screws to hold the plate in place. A verity of different screws could be used to create different head profiles
+
 lamina-application:
   - title: Hand Application
     path: "HandLaminaApplication.jpg" 
-    description: This method of lamina application involves a human operator physically placing a sheet of lamina on top of the MPHX module and holding plate.
+    description: This method of lamina application involves a human operator physically placing a sheet of lamina on top of the MPHX plate and holding plate.
     
   - title: Roller System
     path: "RollerLaminaApplication.jpg" 
     description: Similar to the paper feeding mechanism of a printer, this method of lamina application would involve feeding of a sheet of lamina between a set of rollers, placing the sheet of lamina on top of the MPHX and holding plate as it moves underneath the rollers.
-    
-  - title: Unroll Mechanism 
-    path: "UnrollLaminaApplication.jpg" 
-    description: In this setup, the lamina starts in a long sheet on a roll supported by a shaft over the feed mechanism. The one end of the lamina is secured to one end of the holding plate, and the roll is unspooled as the MPHX module and holding plate move past underneath it. 
 
   - title: Ramp 
     path: "RampLaminaApplication.jpg" 
-    description: A sheet of lamina is suspended over a ramp above the feed mechanism. As the MPHX module and holding plate approaches the ramp, the clipboard-like mechanism holding the lamina is released, allowing the lamina to slide down the ramp. At the end of the ramp, the lamina lands on top of the holding plate and MPHX module as the feed machanism move past and underneath via the feed system.
+    description: A sheet of lamina is suspended over a ramp above the feed mechanism. As the MPHX plate and holding plate approaches the ramp, the clipboard-like mechanism holding the lamina is released, allowing the lamina to slide down the ramp. At the end of the ramp, the lamina lands on top of the holding plate and MPHX plate as the feed machanism move past and underneath via the feed system.
 
   - title: Rotating Frame
-    path: "FrameLaminaApplication.jpg" 
-    description: A sheet of lamina begins in a square frame slightly less than perpendicular to the MPHX module and holding plate. When the module is in the correct position, the frame rotates on a hinge and sets the lamina on top. There is a lip on the bottom of the frame that is narrow enough to prevent the lamina from falling through, but wide enough to allow it to pass over the holding plate without touching. The hinge of the frame is positioned below the plane of the feed mechanism, to fully place the lamina on top of the MPHX module and release it from the frame.
+    path: "RotatingFrameLaminaApplication.jpg" 
+    description: A sheet of lamina begins in a square frame slightly less than perpendicular to the MPHX plate and holding plate. When the plate is in the correct position, the frame rotates on a hinge and sets the lamina on top. There is a lip on the bottom of the frame that is narrow enough to prevent the lamina from falling through, but wide enough to allow it to pass over the holding plate without touching. The hinge of the frame is positioned below the plane of the feed mechanism, to fully place the lamina on top of the MPHX plate and release it from the frame.
     
 lamina-clamp:
   - title: C-Clamp
     path: "c clamp sketch.png" 
     description: To keep the lamina and adhesive together during the drying process, a C-clamp (or two) is proposed to be used to hold the MPHX plate, its holder, and the lamina together.
+
+  - title: Side Flip Clamps
+    path: "SideClipsLaminaClamping.jpg" 
+    description: In a very similar method to the Side Clips in the Jig section, clamps attached to hinges on the side of the MPHX holder would fold up and apply pressure to the lamina along the rails to keep both in place while the adhesive cures. They would then be folded back down in order to release the now completed MPHX-lamina plate.
+
+  - title: Lever Clamping
+    path: "Lever Clamp.jpg"
+    description: Using comercial lever clamps, the lamina can be secured with high forces ontop of the plate. 
     
   - title: Alignment Pins
     path: "AignmentPins_Leah.png" 
@@ -70,24 +95,20 @@ lamina-clamp:
     path: "TopClampingPannel_Leah.png"
     description: Uniform compression of the assembly ensured by a flat pressure plate clamped at discrete points with any type of clamping mechanism. 
 
-  - title: Side Flip Clamps
-    path: "SideFlipClamps.jpg" 
-    description: In a very similar method to the Side Clips in the Jig section, clamps attached to hinges on the side of the MPHX holder would fold up and apply pressure to the lamina along the rails to keep both in place while the adhesive cures. They would then be folded back down in order to release the now completed MPHX-lamina module.
-
 feed: 
 
   - title: Powered Rollers
     path: "PoweredRollers_Peter.png" 
-    description: This feed mechanism uses powered rollers to move a tray of MPHX modules along a track. The rollers could span the length of the tray or be canitlevered as pictured. 
+    description: This feed mechanism uses powered rollers to move a tray of MPHX plates along a track. The rollers could span the length of the tray or be canitlevered as pictured. 
 
   - title: Powered Belt
     path: "PoweredBelt_Peter.png" 
-    description: This feed mechanism moves a tray of MPHX modules along the track using two continuous, driven belts. Belts would be mounted on intermittent pulleys.
+    description: This feed mechanism moves a tray of MPHX plates along the track using two continuous, driven belts. Belts would be mounted on intermittent pulleys.
 
   - title: Locking Belt
     path: "LockingBelt_Peter.png" 
-    description: This feed mechanism is very similar to the powered roller case, except it incorporates a locking mechanism on the belt to assist in forcing the tray of modules through the system. The locking mechanism could take many forms, such as the wedges pictured. 
+    description: This feed mechanism is very similar to the powered roller case, except it incorporates a locking mechanism on the belt to assist in forcing the tray of plates through the system. The locking mechanism could take many forms, such as the wedges pictured. 
 
   - title: Hand Delivered
-    path: "HandDelivered.jpg" 
-    description: This feed mechanism is the most simple option, and involves a human operator picking up and moving the MPHX modules and jig between the different subsystems by hand.
+    path: "HandFeed.jpg" 
+    description: This feed mechanism is the most simple option, and involves a human operator picking up and moving the MPHX plates and jig between the different subsystems by hand.

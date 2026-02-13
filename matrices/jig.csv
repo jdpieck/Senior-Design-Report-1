@@ -1,0 +1,13 @@
+Jig		Channel Slot		Vacuum Chuck		Slide Clips		Pull Mechanism 		Side Latches		Screw Clamping	
+Mechanism	Multiplier	Unweighted	Weighted	Unweighted	Weighted	Unweighted	Weighted	Unweighted	Weighted	Unweighted	Weighted	Unweighted	Weighted
+Low Gluing Mechanism Interference	8	5	40	10	80	6	48	10	80	6	48	6	48
+Low Lamina Application Interference	7	2	14	10	70	5	35	9	63	5	35	4	28
+Reduced Module Wear	3	8	24	8	24	6	18	3	9	8	24	4	12
+Easy Module Loading	7	8	56	10	70	6	42	8	56	7	49	3	21
+Secure Holding Mechanism	9	7	63	9	81	8	72	7	63	6	54	8	72
+Scalability	4	10	40	2	8	5	20	7	28	6	24	9	36
+Ease of Manufacturing	10	9	90	1	10	8	80	4	40	8	80	8	80
+Cost per unit	6	9	54	1	6	7	42	4	24	7	42	8	48
+Totals		381		349		357		363		356		345	
+Rank		1		5		3		2		4		6	
+Continue		Develop		No		Develop		No		No		No	

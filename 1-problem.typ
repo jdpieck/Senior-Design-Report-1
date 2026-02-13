@@ -4,7 +4,7 @@ Heat exchangers may operate between two liquids, a liquid and a gas, or two gas 
 
 	Heat exchanges are expensive devices due to the materials used in their construction. However, in many cases, they are operated in conditions that do not require robust properties of metal because there are lower pressures and temperatures @Vinod. These cases would typically be found in air-conditioning and heating operations, where the temperatures are near ambient @HeatTransferText. In these cases, lower-cost materials can be used without significantly sacrificing performance @Vinod. This project investigates the use of thermoplastics as a replacement for metal in a water-to-air heat exchanger @Vinod. Although thermoplastics have a much higher thermal resistance than metals, this does not impede performance @HeatTransferText. The heat exchanger considered for this project is a water-to-air heat exchanger, and the thermal resistance of the air is the limiting factor of performance, not the material properties @HeatTransferText. 
 
-	The heat exchanger considered in this project consists of stacks of identical units. Each unit is constructed from an injection-molded Microchannel Polymer Heat Exchanger (MPHX) module made of ABS plastic and a thin polycarbonate film (lamina) bonded to one side of the module. The film seals internal channels allowing water to flow through the module. Multiple units are stacked and bonded together, forming continuous water passages and air gaps between modules that permit airflow through the exchanger. /// can't cite? not online
+	The heat exchanger considered in this project consists of stacks of identical modules. Each unit is constructed from an injection-molded Microchannel Polymer Heat Exchanger (MPHX) plate made of ABS plastic and a thin polycarbonate film (lamina) bonded to one side of the plate. The film seals internal channels allowing water to flow through the module. Multiple modules are stacked and bonded together, forming continuous water passages and air gaps between plates that permit airflow through the exchanger. /// can't cite? not online
 
 The primary task of this project is to identify suitable materials and assembly methods for bonding the heat exchanger units. Specifically, the project focuses on selecting an appropriate adhesive and/or solvent and defining a reliable application process that satisfies the following design constraints:
 
@@ -16,7 +16,7 @@ The primary task of this project is to identify suitable materials and assembly 
 
 - Part alignment must be maintained within a tolerance of ±0.5 mm.
 
-- Adhesive application must be repeatable and predictable for manufacturing scalability.
+- Adhesive application must be semi-automated and predictable for manufacturing scalability.
 
 - A clamping method must be implemented to ensure proper bonding during curing.
 
