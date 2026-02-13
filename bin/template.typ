@@ -11,6 +11,8 @@
 
 #let solution-grid(entries) = {
   
+  show image: set block(radius: 5pt, clip: true)
+
   set grid(
     fill: none,
     gutter: 1em,
