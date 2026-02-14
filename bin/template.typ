@@ -79,6 +79,8 @@
   show table.cell.where(x: 0, y: invert(-1)): strong
   show table.cell.where(x: 0, y: invert(-2)): strong
   show table.cell.where(x: 0): set align(left)
+  show table.cell: set text(.85em)
+
 
   set table(
     stroke: (x, y) => (
@@ -98,7 +100,7 @@
 
   [#figure(
     table(
-      columns: (auto, ..(3em, )*(data.at(0).len() - 1)),
+      columns: (auto, ..(2.5em, )*(data.at(0).len() - 1)),
       ..data.flatten()
     ),
     caption: data.at(0).at(0) + " Screening Matrix"
@@ -111,7 +113,7 @@
   data.last().last() = data.last().last().split(",").at(0)
   let invert(int) = data.len() + int
   
-  set text(9pt)
+  show table.cell: set text(.85em)
   set par(justify: false)
 
   set table(
@@ -150,7 +152,7 @@
   [#figure(
     caption: data.first().first() + " Selection Matrix",
     table(
-      columns: (14em, 3em, ..(3em, )*(data.at(0).len() - 2)),
+      columns: (12em, ..(2.5em, )*(data.at(0).len() - 1)),
       table.header(..data
         .at(0)
         .filter(it => it != "")

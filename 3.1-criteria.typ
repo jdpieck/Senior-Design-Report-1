@@ -50,15 +50,3 @@
   caption: [System requirements, broken into functions and qualities. ]
 )
 
-== Evaluation Criteria Key
-#let data = csv("criteria.csv")
-#set text(.85em)
-
-#show: standard-table
-#figure(
-table(
-  columns: data.first().len(),
-  ..data.flatten()
-),
-caption: [Preliminary evaluation scale (from 1 to 10) for criteria.]
-) <criteria>

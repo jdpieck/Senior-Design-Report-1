@@ -16,7 +16,7 @@ applicators:
  #    description: "This verison of the stamp design stamps the pattern of the ridges directly to the lamina. The lamina would then be placed on top of the plate's ridges. Between cylcles, the stamp would lower into a bed of adhesive."
 
   - title: Screenprint 
-    path: "SilkscreenAdhesiveApplication.jpg" 
+    path: "SilkscreenAdhesiveApplication.PNG" 
     description: This application method is very similar to the typical screenprinting process, but by substituting ink for our chosen adhesive. On a prepared and otherwise opaque silkscreen, there are permeable areas in the shape of the MPHX ridges. Using a squeegee, the adhesive will permeate the membrane and apply a set amount of adhesive to the lamina in our desired application pattern. 
 
 
@@ -44,20 +44,20 @@ jig:
     
   - title: Screw Clamp
     path: "Screw Clamp.jpg"
-    description: This jig design uses standard machine screws to hold the plate in place. A variety of different screws could be used to create different head profiles
+    description: This jig design uses standard machine screws to hold the plate in place. A variety of different screws could be used to create different head profiles.
 
 lamina-application:
     
   - title: Roller System
-    path: "RollerLaminaApplication.jpg" 
+    path: "RollerLaminaApplication.PNG" 
     description: Similar to the paper feeding mechanism of a printer, this method of lamina application would involve feeding of a sheet of lamina between a set of rollers, placing the sheet of lamina on top of the MPHX and holding plate as it moves underneath the rollers.
 
   - title: Ramp 
-    path: "RampLaminaApplication.jpg" 
+    path: "RampLaminaApplication.PNG" 
     description: A sheet of lamina is suspended over a ramp above the feed mechanism. As the MPHX plate and holding plate approaches the ramp, the clipboard-like mechanism holding the lamina is released, allowing the lamina to slide down the ramp. At the end of the ramp, the lamina lands on top of the holding plate and MPHX plate as the feed machanism move past and underneath via the feed system.
 
   - title: Rotating Frame
-    path: "RotatingFrameLaminaApplication.jpg" 
+    path: "RotatingFrameLaminaApplication.PNG" 
     description: A sheet of lamina begins in a square frame slightly less than perpendicular to the MPHX plate and holding plate. When the plate is in the correct position, the frame rotates on a hinge and sets the lamina on top. There is a lip on the bottom of the frame that is narrow enough to prevent the lamina from falling through, but wide enough to allow it to pass over the holding plate without touching. The hinge of the frame is positioned below the plane of the feed mechanism, to fully place the lamina on top of the MPHX plate and release it from the frame.
     
 lamina-clamp:
@@ -66,7 +66,7 @@ lamina-clamp:
     description: To keep the lamina and adhesive together during the drying process, a c-clamp (or two) would be used to hold the MPHX plate, its holder, and the lamina together.
 
   - title: Side Flip Clamps
-    path: "SideClipsLaminaClamping.jpg" 
+    path: "SideLaminaClamps.PNG" 
     description: In a very similar method to the side clips in the Jig section, clamps attached to hinges on the side of the MPHX holder would fold up and apply pressure to the lamina along the rails to keep both in place while the adhesive cures. They would then be folded back down in order to release the now completed MPHX-lamina plate.
 
   - title: Lever Clamping
@@ -99,11 +99,11 @@ feed:
 appendix: 
 
   - title: Hand Delivered (Feed)
-    path: "HandFeed.jpg" 
+    path: "HandFeed.PNG" 
     description: This feed mechanism is the most simple option, and involves a human operator picking up and moving the MPHX plates and jig between the different subsystems by hand.
 
   - title: Hand Application (Lamina Application)
-    path: "HandLaminaApplication.jpg" 
+    path: "HandLaminaApplication.PNG" 
     description: This method of lamina application involves a human operator physically placing a sheet of lamina on top of the MPHX plate and holding plate. Since this method is fully non-automated, we will be using it as a reference to determine the effectiveness of other potential designs.
 
 

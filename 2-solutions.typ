@@ -5,50 +5,47 @@
 
 To identify potential solutions for the heat exchanger adhesive system, we divided the overall design into six subassemblies based on the primary objective and its constraints. The subsystems are: adhesive selection (@Adhesive-Choice), a mechanism to keep the MPHX plates flat (@Jig), adhesive application (@Adhesive-Application), lamina placement (@Lamina-Application), a clamping mechanism for curing (@Clamping-Mech), and a feed system to move components through each stage (@Feed).
 
-#oasis-align(
-  force-frac: .4, [
+== Technical Difficulties
+Our team has faced challenges in determining adhesive application solutions due to heavy reliance on glue type. Our subsystems are designed around the adhesive's viscosity, material compatibility, evaporation time, and toxicity.
+
+Additional challenges considered:
+
+- Securing the MPHX plates such that there is no interference with the application of the adhesive due to the bowed nature of the plates.
+- Applying adhesive to a small surface area (.04 mm) with minimal overflow into MPHX water channels 
+- Transferring MPHX plates between assembly steps in a consistent and uniform way 
+
+These challenges have motivated us to consider application methods that enable the accurate application of adhesive and a feed mechanism to carry our parts from subassembly to subassembly. 
+
 == Adhesive Choice <Adhesive-Choice>
 In order to explore potential solutions for the glue jig we had to first determine the limitations of potential adhesives. These limitations included things like accessibility, ease of use, and effectiveness. The adhesive options were narrowed down to 3 types due to the material limitations of binding ABS (plates) and polycarbonate (lamina). The three adhesive types we determined to be the best for the project are two-part epoxy, one-part adhesive, and solvent. The chosen adhesive will influence the entire glue system, since certain processes are non compatible with particular methods of application, movement, and storage.
-],[
-  #screening-matrix("glue-screening.csv")
-])
 
-
-
-
-
-#let comparison-table(path) = {
-  show: standard-table
+#let product-specs(path) = {
   let data = csv("matrices/" + path, delimiter: "\t")
-
+  show: standard-table
+  
   figure(
     table(
-      columns: data.at(0).len(),
+      // columns: data.at(0).len(),
+      columns: (1fr, 5em, 5em, 1fr, 5em, 5em, 5em, 3em),
       ..data.flatten().map(it => eval(it, mode: "markup"))
     ),
-    caption: []
+    caption: [Adhesives selected for further evaluation.]
   )
-
 }
 
-
-#comparison-table("glue-evaluation.csv")
-
-// #set page(columns: 2)
+#product-specs("glue-specs.csv")
 
 #pagebreak()
 == Jig <Jig>
 The jig's main purpose is to hold the MPHX plates flat and stationary so that the feed mechanism can transport the plates throughout the glue and lamina application process. The primary requirements are that the jig has to hold the MPHX plates securely as well as leave the water side of the plate open for adhesive and lamina application. This is important to make sure the MPHX plates are not free to shift. Shifting and non secured plates may result in misalignment during the adhesive and lamina application processes, causing the entire glue to system to be ineffective. The type of jig used influences the types of feasible adhesive and lamina applications as well as the potential feed systems and clamping mechanisms.
 
-
-
 #solution-grid(yaml("2.1-solutions-list.yaml").jig)
+
 
 #pagebreak()
 == Adhesive Application Method <Adhesive-Application>
 The adhesive application subsystem is used to apply the chosen adhesive to the MPHX plates. Applicators must evenly distribute the adhesive onto the upper ridges of the plates while they are held by the jig. This subsystem includes how and where the adhesive is stored, the location and amount of adhesive applied, and the method used to apply the adhesive to the MPHX plates. The chosen application system influences the overall effectiveness and accuracy of the adhesive to the lamina.
 
-#screening-matrix("applicator-screening.csv")
 
 #solution-grid(yaml("2.1-solutions-list.yaml").applicators)
 

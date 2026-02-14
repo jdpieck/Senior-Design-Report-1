@@ -13,7 +13,6 @@ The primary task of this project is to identify suitable materials and assembly 
 - The adhesive must not significantly clog or obstruct water flow passages.
 - The adhesive must be compatible with the ABS MPHX plates and PC film.
 - A method must be developed to maintain plate flatness during adhesive application and curing, accounting for manufacturing-induced warpage.
-- Part alignment must be maintained within a tolerance of ±0.5 mm.
 - Adhesive application must be semi-automated and predictable for manufacturing scalability.
 - A clamping method must be implemented to ensure proper bonding during curing.
 - The bonded assembly must withstand internal water pressures of at least 10 psig without leakage.

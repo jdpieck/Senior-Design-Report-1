@@ -3,6 +3,9 @@ Our team will conduct adhesive testing to evaluate the feasibility of bonding AB
 
 Testing will use a simplified setup with ABS pipe (½ in. ID, 1 in. OD). In the first round, PC lamina will be bonded to short pipe sections and mechanically separated after curing. Adhesives that fail will not proceed to further testing. Successful adhesives will undergo pressure testing using tapped pipe sections connected to a pump. We will record the failure pressure for each adhesive and use the bonded surface area to estimate performance in the final assembly.
 
+
+
+
 == Preliminary Calculations
 === Calculation 1: Batch Sizing
 - Width of standalone plate: $w = 5 "cm"$
@@ -31,12 +34,12 @@ We are only considering the variation in cycle times between the applicators in 
 
 $ T = 5 + 5 + 90 $
 $ T = 100 "seconds" "(1 min, 40 seconds)" $
-$ "Total Amount Produced Per Hour" = 3 dot ((3600s)/(100s)) = 108 "Modules/hour" $
+$ "Total Amount Produced Per Hour" = 3 dot ((3600 "s")/(100 "s")) = 108 "Modules/hour" $
 
 *Roller:* We assume the roller can process 4 modules per cycle and each cycle takes 5 seconds to complete. The roller automatically resupplies with adhesive so there is not resupply time.
 
 $ T = 5 + 90 $
 $ T = 95 "seconds" "(1 min, 35 seconds)" $
-$ "Total Modules Prodcued Per Hour" = 4 dot ((3600s)/(95s)) = 151 "Modules/hour" $
+$ "Total Modules Prodcued Per Hour" = 4 dot ((3600 "s")/(95 "s")) = 151 "Modules/hour" $
 
 From these calculations, we can see that the roller will likely have an advantage in terms of production rate. The feature of automatically reapplying adhesive to the roller adds some benefit, but really it may not even matter if the rate of loading new modules bottlenecks the process. The real advantage is the roller's capacity to process more modules per batch.
