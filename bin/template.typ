@@ -1,3 +1,9 @@
+#let styles = (
+  accent: rgb("#063e7e"),
+  strong-line: black,
+  weak-line: gray,
+)
+
 #let appendix(body) = {
     set heading(numbering: "A.A", supplement: [Appendix])
   
@@ -12,6 +18,7 @@
 #let solution-grid(entries) = {
   
   show image: set block(radius: 5pt, clip: true)
+  // show figure.caption: set text(weight: "regular")
 
   set grid(
     fill: none,
@@ -36,7 +43,7 @@
        (  
         [#figure(
           image("../images/" + it.path),
-            caption: it.title
+            caption: it.title + " Sketch"
           ) #label(it.path.replace(" ", "-").split(".").at(0))],
         stack(
           heading(it.title, level:3),
@@ -59,6 +66,51 @@
       
   //   ]
   // ]
+}
+
+#let screening-matrix(path) = {
+  let data = csv("../matrices/" + path, delimiter: "\t")
+  // show table.cell: set align(left)
+
+  show table.cell.where(y: 0): it => rotate(-90deg, it)
+  show table.cell.where(y: 0, x: 0): it => rotate(90deg, it)
+  show table.cell.where(y: 0): set align(bottom)
+  show table.cell.where(x: 0): set align(left)
+
+  
+  set table(
+    // stroke: (x, y) => (
+      // bottom: {
+      //   // if y > 1 {black}
+      //   if (
+      //     y == 0 or
+      //     y == 1 or 
+      //     y == invert(-1) or
+      //     y == invert(-2) or
+      //     y == invert(-4)
+      //       ) {black} 
+      // },
+      // right: {
+      //   if y > 0 and y < invert(-3) {
+      //     if calc.rem(x, 2) == 1 {black}
+      //     else {black + .3pt}
+      //   }
+      //   if y <= 0 or y > invert(-4) {
+      //     if calc.rem(x, 2) == 0 {black}
+      //   }
+      // }
+    // )
+  )
+  
+
+  figure(
+    table(
+      columns: (auto, ..(3em, )*(data.at(0).len() - 1)),
+      ..data.flatten()
+    ),
+    caption: []
+  )
+
 }
 
 #let decision-matrix(path) = {
@@ -161,9 +213,13 @@
   )
 
   set par(leading: .6em)
+  set rotate(reflow: true)
+
+  show table: set par(justify: false)
+  show table: set list(indent: .2em)
 
   
-   show figure.caption: set text(.9em, fill: accent)
+  show figure.caption: set text(.9em, fill: accent)
   show figure.caption.where(body: []): it => it.supplement + [ ] + context it.counter.display()
 
   show heading.where(level: 1): set text(fill: accent)
@@ -308,7 +364,7 @@
   heading(level: 1, numbering: none, [Key Terms])
   terms(..csv("../def.csv").sorted(), separator: [ -- ])
   // show grid.cell.where(x:0): set align(right) 
-  show grid.cell.where(x:0): strong
+  // show grid.cell.where(x:0): strong
   grid(
     columns: 2,
     gutter: 1%,
@@ -318,7 +374,7 @@
   body // Main body
   
   pagebreak()
-  bibliography("../refs.bib")
+  bibliography("../refs.bib", full: true)
   
   pagebreak(weak: true)
   show: appendix

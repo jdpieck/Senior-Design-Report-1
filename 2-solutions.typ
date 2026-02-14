@@ -1,16 +1,39 @@
 #import "bin/template.typ": *
 
+
  To identify potential solutions for the heat exchanger adhesive system, we divided the overall design into six subassemblies based on the primary objective and its constraints. The subsystems are: adhesive selection (@Adhesive-Choice), a mechanism to keep the MPHX plates flat (@Jig), adhesive application (@Adhesive-Application), lamina placement (@Lamina-Application), a clamping mechanism for curing (@Clamping-Mech), and a feed system to move components through each stage (@Feed).
  
 == Adhesive Choice <Adhesive-Choice>
 In order to explore potential solutions for the glue jig we had to first determine the limitations of potential adhesives. These limitations included things like accessibility, ease of use, and effectiveness. The adhesive options were narrowed down to 3 types due to the material limitations of binding ABS (plates) and polycarbonate (lamina). The three adhesive types we determined to be the best for the project are two-part epoxy, one-part adhesive, and solvent. The chosen adhesive will influence the entire glue system, since certain processes are non compatible with particular methods of application, movement, and storage.
 
-"table of benefits/description of each adhesive subtype"
+#let comparison-table(path) = {
+  let data = csv("matrices/" + path, delimiter: "\t")
+  set list(indent: .2em)
+  show table.cell: set align(left)
+
+  figure(
+    table(
+      columns: data.at(0).len(),
+      ..data.flatten().map(it => eval(it, mode: "markup"))
+    ),
+    caption: []
+  )
+
+}
+
+#screening-matrix("glue-screening.csv")
+
+#comparison-table("glue-evaluation.csv")
 
 // #set page(columns: 2)
 
 == Jig <Jig>
-The jig's main purpose is to hold the MPHX plates flat and stationary so that the feed mechanism can transport the plates throughout the glue and lamina application process. The primary requirements are that the jig has to hold the MPHX plates securely as well as leave the water side of the plate open for adhesive and lamina application. This is important to make sure the MPHX plates are not free to shift. Shifting and non secured plates may result in misalignment during the adhesive and lamina application processes causing the entire glue to system to be ineffective. The type of jig used influences the types of feasible adhesive and lamina applications as well as the potential feed systems and clamping mechanisms.
+The jig's main purpose is to hold the MPHX plates flat and stationary so that the feed mechanism can transport the plates throughout the glue and lamina application process. The primary requirements are that the jig has to hold the MPHX plates securely as well as leave the water side of the plate open for adhesive and lamina application. This is important to make sure the MPHX plates are not free to shift. Shifting and non secured plates may result in misalignment during the adhesive and lamina application processes, causing the entire glue to system to be ineffective. The type of jig used influences the types of feasible adhesive and lamina applications as well as the potential feed systems and clamping mechanisms.
+
+
+
+#screening-matrix("applicator-screening.csv")
+
 #solution-grid(yaml("2.1-solutions-list.yaml").jig)
 
 == Adhesive Application Method <Adhesive-Application>
@@ -26,5 +49,5 @@ The feed subsystem is used to move our plate throughout the entire glue system. 
 #solution-grid(yaml("2.1-solutions-list.yaml").feed)
 
 == Clamping Mechanism <Clamping-Mech>
-The clamping mechanism subsystem is used to make sure the MPHX plate and lamina once glued stay flat for the duration of the adhesive curing. It must evenly apply constant pressure onto the lamina as the adhesive cures preventing bowing and ensuring accurate sealing and alignment. The importance of the clamping mechanism to the glue system's overall design is that it acts as quality control making sure the modules are usable in later assembly steps such as stacking. The clamping mechanism is the last step in the glue system and is influenced by all other subsystems.
+The clamping mechanism subsystem is used to make sure the glued MPHX plate and lamina stay flat for the duration of the adhesive curing. It must evenly and constantly apply pressure onto the lamina as the adhesive cures preventing bowing and ensuring accurate sealing and alignment. The importance of the clamping mechanism to the glue system's overall design is that it acts as quality control. It does this by making sure the modules are usable in later assembly steps such as stacking. The clamping mechanism is the last step in the glue system and is influenced by all other subsystems.
 #solution-grid(yaml("2.1-solutions-list.yaml").lamina-clamp)

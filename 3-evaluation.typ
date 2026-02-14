@@ -15,27 +15,34 @@ These challenges have motivated us to consider application methods that enable t
 #include "3.1-criteria.typ"
 
 == Adhesive Selection
-Given Figure smt from evaluations/criteria tables solvents and 
+Based on our preliminary research, our team has selected the following adhesives for compatibility testing within our design. More information about the testing procedure is in @feasiblity.
 
 #let product-specs(path) = {
   let data = csv("matrices/" + path, delimiter: "\t")
   // set page(flipped: true)
   set par(justify: false)
-  table(
-    columns: data.at(0).len(),
-    ..data.flatten()
+
+  // show table.cell.where(y: 0): it => rotate(-90deg, it)
+  
+  figure(
+    table(
+      columns: data.at(0).len(),
+      ..data.flatten().map(it => eval(it, mode: "markup"))
+    ),
+    caption: []
   )
+
 }
 
 #product-specs("glue-specs.csv")
 
-Based on experimental data (cough cough just testing) we chose the XXXX adhesive.
+
 == Jig Selection
 
 #decision-matrix("jig.csv")
 // #pagebreak()
 == Adhesive Application Selection
-When deciding on mechanisms to apply adhesives, we heavily prioritized designs that would be compatible with all of our adhesive options, ultimately leading to the selection of the *Roller and Stamp Applicators*, see @Roller_Peter and @Stamp_Plate respectively. The stamp and the roller should both be viable regardless of adhesive viscosity. They both allow for up to 5 plates to be processed at a time, which falls in line with our sponsor's prioritization of production rate. 
+When deciding on mechanisms to apply adhesives, we heavily prioritized designs that would be compatible with all of our adhesive options, ultimately leading to the selection of the *Roller and Stamp Applicators*, (@Roller_Peter and @Stamp_Plate respectively). The stamp and the roller should both be viable regardless of adhesive viscosity. They both allow for up to 5 plates to be processed at a time, which falls in line with our sponsor's prioritization of production rate. 
 
 // Insert screening matrix here
 
@@ -48,7 +55,7 @@ When deciding on mechanisms to apply adhesives, we heavily prioritized designs t
 
 // #pagebreak()
 == Feed Selection
-For the system feed mechanism, we opted to investigate the *locking belt *(@LockingBelt_Peter). This design offers the same functions as the powered rollers and more simple, powered belt, with the benefit of being more secure. 
+For the system feed mechanism, we opted to investigate the *Locking Belt* (@LockingBelt_Peter). This design offers the same functions as the powered rollers and more simple, powered belt, with the benefit of being more secure. 
 
 #decision-matrix("feed.csv")
 == Clamping Mechanism Selection

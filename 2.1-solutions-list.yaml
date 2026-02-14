@@ -11,25 +11,14 @@ applicators:
     path: "Stamp_Plate.png" 
     description: This version of the stamp design stamps adhesive directly to the MPHX plate. The stamp itself has contours which match the ridges of the plate where adhesive should be applied. The stamp would be dipped into a soaked sponge or bed of adhesive between cycles.
 
-  - title: Stamp onto Lamina
-    path: "Stamp_Lamina.png" 
-    description: "This verison of the stamp design stamps the pattern of the ridges directly to the lamina. The lamina would then be placed on top of the plate's ridges. Between cylcles, the stamp would lower into a bed of adhesive."
-
-  - title: Sponge 
-    path: "Sponge_Leah.png" 
-    description: A Sponge is used to transfer adhesive from vat of adhesive onto the lamina. This design applies a uniform coat over the entire surface. 
-    
-  - title: Squeegee 
-    path: "Squeegee_Leah.png" 
-    description: A Squeegee applies a uniform thickness of adhesive on the lamina. The queegee is controlled by a motorized sliding jig. 
+ # - title: Stamp onto Lamina
+ #    path: "Stamp_Lamina.png" 
+ #    description: "This verison of the stamp design stamps the pattern of the ridges directly to the lamina. The lamina would then be placed on top of the plate's ridges. Between cylcles, the stamp would lower into a bed of adhesive."
 
   - title: Screenprint 
     path: "SilkscreenAdhesiveApplication.jpg" 
     description: This application method is very similar to the typical screenprinting process, but by substituting ink for our chosen adhesive. On a prepared and otherwise opaque silkscreen, there are permeable areas in the shape of the MPHX ridges. Using a squeegee, the adhesive will permeate the membrane and apply a set amount of adhesive to the lamina in our desired application pattern. 
 
-  - title: Spray
-    path: "Spray_Patrick.png"
-    description: Low viscosity adhesive or solvent is sprayed over the entire plate. Two alternative designs were considered, one where a single nozzle sprays over a moving plate, and one where several nozzles spray a stationary plate.
 
   - title: Dot Stencil
     path: "DotStencil_Patrick.png"
@@ -51,16 +40,13 @@ jig:
 
   - title: Pull Mechanism
     path: "Screw Clamp.jpg"
-    description: puts the plate under tension, preventing the plate from moving while remaining completely flush. 
+    description: This jig design puts the plate under tension, preventing the plate from moving while remaining completely flush.
     
   - title: Screw Clamp
     path: "Screw Clamp.jpg"
-    description: Uses traditional machine screws to hold the plate in place. A variety of different screws could be used to create different head profiles
+    description: This jig design uses standard machine screws to hold the plate in place. A variety of different screws could be used to create different head profiles
 
 lamina-application:
-  - title: Hand Application
-    path: "HandLaminaApplication.jpg" 
-    description: This method of lamina application involves a human operator physically placing a sheet of lamina on top of the MPHX plate and holding plate.
     
   - title: Roller System
     path: "RollerLaminaApplication.jpg" 
@@ -77,11 +63,11 @@ lamina-application:
 lamina-clamp:
   - title: C-Clamp
     path: "c clamp sketch.png" 
-    description: To keep the lamina and adhesive together during the drying process, a C-clamp (or two) is proposed to be used to hold the MPHX plate, its holder, and the lamina together.
+    description: To keep the lamina and adhesive together during the drying process, a c-clamp (or two) would be used to hold the MPHX plate, its holder, and the lamina together.
 
   - title: Side Flip Clamps
     path: "SideClipsLaminaClamping.jpg" 
-    description: In a very similar method to the Side Clips in the Jig section, clamps attached to hinges on the side of the MPHX holder would fold up and apply pressure to the lamina along the rails to keep both in place while the adhesive cures. They would then be folded back down in order to release the now completed MPHX-lamina plate.
+    description: In a very similar method to the side clips in the Jig section, clamps attached to hinges on the side of the MPHX holder would fold up and apply pressure to the lamina along the rails to keep both in place while the adhesive cures. They would then be folded back down in order to release the now completed MPHX-lamina plate.
 
   - title: Lever Clamping
     path: "Lever Clamp.jpg"
@@ -93,10 +79,9 @@ lamina-clamp:
     
   - title: Top Clamping Panel
     path: "TopClampingPannel_Leah.png"
-    description: Uniform compression of the assembly ensured by a flat pressure plate clamped at discrete points with any type of clamping mechanism. 
+    description: Uniform compression of the assembly is ensured by a flat pressure plate clamped at discrete points with any type of clamping mechanism. 
 
 feed: 
-
   - title: Powered Rollers
     path: "PoweredRollers_Peter.png" 
     description: This feed mechanism uses powered rollers to move a tray of MPHX plates along a track. The rollers could span the length of the tray or be canitlevered as pictured. 
@@ -109,6 +94,28 @@ feed:
     path: "LockingBelt_Peter.png" 
     description: This feed mechanism is very similar to the powered belt case, except it incorporates a locking mechanism on the belt to assist in forcing the tray of plates through the system. The locking mechanism could take many forms, such as the wedges pictured. 
 
-  - title: Hand Delivered
+
+
+appendix: 
+
+  - title: Hand Delivered (Feed)
     path: "HandFeed.jpg" 
     description: This feed mechanism is the most simple option, and involves a human operator picking up and moving the MPHX plates and jig between the different subsystems by hand.
+
+  - title: Hand Application (Lamina Application)
+    path: "HandLaminaApplication.jpg" 
+    description: This method of lamina application involves a human operator physically placing a sheet of lamina on top of the MPHX plate and holding plate. Since this method is fully non-automated, we will be using it as a reference to determine the effectiveness of other potential designs.
+
+
+  - title: Spray (Adhesive Application)
+    path: "Spray_Patrick.png"
+    description: Low viscosity adhesive or solvent is sprayed over the entire plate. Two alternative designs were considered, one where a single nozzle sprays over a moving plate, and one where several nozzles spray a stationary plate.
+
+    
+  - title: Sponge (Adhesive Application)
+    path: "Sponge_Leah.png" 
+    description: A sponge is used to transfer adhesive from vat of adhesive onto the lamina. This design applies a uniform coat over the entire surface. 
+    
+  - title: Squeegee (Adhesive Application)
+    path: "Squeegee_Leah.png" 
+    description: A squeegee applies a uniform thickness of adhesive on the lamina. The queegee is controlled by a motorized sliding jig. 

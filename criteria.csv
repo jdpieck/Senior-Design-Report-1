@@ -1,14 +1,14 @@
 Criteria,Description (Scale = 1),Description (Scale = 10)
 Automation,Fully human operated,Fully automated except button pressing
 Pressure Resistance,Film does not stick to fin,Film sticks to fin past needed pressure
-Batch Size,<1 per cycle,>5 per cycle
+Batch Size,< 1 unit per cycle,> 5 units per cycle
 Glue Tolerance,Fully blocks channels,No spillage / perfect tolerance
 Glue Precision,No application predictability,Perfectly precise amount and placement
-Apply Lamina,Does not apply lamina,Fully correctly and reliably applies lamina
-Device Scale,Large (>3'x3'),Compact (<1'x1')
+Apply Lamina,Does not apply lamina,"Fully, correctly, and reliably applies lamina"
+Device Scale,Large (> 3'x3'),Compact (< 1'x1')
 Volatility,Requires significant ventilation,No ventilation needed
-Glue Dry Time,Long dry time (>24hr),Instant / predictable fast drying
-Budget,Over budget (>$10k),Under budget (<$1k)
+Glue Dry Time,Long dry time (> 24hr),Instant / predictable fast drying
+Budget,Significantly over budget (> $10k),Significantly under budget (< $1k)
 Adaptability,Cannot handle defects,Works with any part regardless of defect
 Cycle Time,Cannot perform full cycle,Instant / extremely fast cycle
-Integration,Does not integrate with G2,Fully integrates / works for G2
+Integration,"Does not integrate with Team 2's jig design",Fully integrates / works with Team 2's jig design

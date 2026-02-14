@@ -1,0 +1,13 @@
+	Roller	Dip Bed	Stamp	Screenprint	Dot Stencil	Spray	Brush/Squeegee	Sponge
+Batch Size	0	-	-	-	0	0	0	0
+Cycle Time	0	-	-	0	0	+	+	+
+Adhesive Compatibilty	0	+	+	-	-	FAIL	FAIL	FAIL
+Predictable Application	0	0	+	+	-	-	-	-
+Low-Tolerance Alignment	0	0	-	-	-	+	+	+
+Low Blockage	0	+	+	+	0	-	-	-
+Low Waste Production	0	+	-	-	0	+	+	+
+Automation Difficulty	0	-	-	-	-	+	-	-
+Size	0	-	-	-	-	0	+	+
+Cost	0	0	-	-	-	+	+	+
+Totals	0	-1	-4	-5	-6	3	2	2
+Pass?	Ref	Yes	Yes	Yes	Yes	No	No	No

@@ -39,25 +39,25 @@ fill: (x,y) =>
         - 0.5mm tolerance
     ],
     [
-      - Same gluing mechanism for both team 14 and team 2
+      - Same gluing mechanism for both Team 14 and Team 2
     ],
     rotate(-90deg)[System Qualities],
     [
       - Predictable curing time
       - Reliable
-        - 1000+ reps
+        - 1000+ completed cycles
     ],
     [
       - Speedy cycle time
       - Large batch size (2-4)
       - Small form factor 
-        - fits on bench-top
+        - Fits on bench-top
       - Non-toxic glue
     ],
     [
       - Fast curing time
-      - Cheap
-      - Integrates with team 2
+      - Cheap materials and manufacturing process
+      - Overall design integrates smoothly with the jig design of Team 2
     ],
   ),
   caption: [System requirements, broken into functions and qualities. ]
