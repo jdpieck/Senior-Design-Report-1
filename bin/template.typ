@@ -373,7 +373,7 @@
   outline(title: "Figures", target: figure.where(kind: image))
   outline(title: "Tables", target: figure.where(kind: table))
 
-  heading(level: 1, numbering: none, [Key Terms])
+  heading(level: 1, numbering: none, [Key Terms], bookmarked: false)
   terms(..csv("../def.csv").sorted(), separator: [ -- ])
   // show grid.cell.where(x:0): set align(right) 
   // show grid.cell.where(x:0): strong

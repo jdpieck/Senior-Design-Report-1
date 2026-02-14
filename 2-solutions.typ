@@ -16,6 +16,7 @@ Additional challenges considered:
 
 These challenges have motivated us to consider application methods that enable the accurate application of adhesive and a feed mechanism to carry our parts from subassembly to subassembly. 
 
+#pagebreak()
 == Adhesive Choice <Adhesive-Choice>
 In order to explore potential solutions for the glue jig, we had to first determine the limitations of potential adhesives. These limitations included things like accessibility, ease of use, and effectiveness. The adhesive options were narrowed down to 3 types due to the material limitations of binding ABS (plates) and polycarbonate (lamina). The three adhesive types we determined to be the best for the project are two-part epoxy, one-part adhesive, and solvent (see @Adhesive_Selection). The chosen adhesive will influence the entire glue system, since certain processes are incompatible with particular methods of application, movement, and storage. Based on product data sheets, the following list of adhesives was chosen for further testing (see @glue-specs).
 

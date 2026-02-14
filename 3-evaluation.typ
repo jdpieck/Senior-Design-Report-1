@@ -60,7 +60,7 @@ For the system feed mechanism, we opted to investigate the *Locking Belt* (@Lock
 
 #pagebreak()
 == Clamping Mechanism Selection
-For the lamina clamping mechanism, we placed a heavy emphasis on a high clamping force and even pressure distribution (see @lamina-clamp-matrix). These criteria ensure that the lamina and plates are properly bonded and capable of handling fluids at >10psig. It is also critical that the lamina be properly aligned on the plate, which was a contributing factor to our selection of the *Alignment Pin* design. We also selected the *Top Clamping* design because it offers unparalleled clamping force and pressure distribution.
+For the lamina clamping mechanism, we placed a heavy emphasis on a high clamping force and even pressure distribution (see @lamina-clamp-matrix). These criteria ensure that the lamina and plates are properly bonded and capable of handling fluids at >10psig. It is also critical that the lamina be properly aligned on the plate, which was a contributing factor to our selection of the *Alignment Pin* (@AignmentPins_Leah) design. We also selected the *Top Clamping* (@TopClampingPannel_Leah) design because it offers unparalleled clamping force and pressure distribution.
 
 #decision-matrix("lamina-clamp.csv")
 

@@ -74,5 +74,6 @@
     + Final Poster Design
     + Capstone Poster and Design Showcase
   ]
-)
-)
+),
+caption: [Tasks for the next two quarters]
+) <tasks>
