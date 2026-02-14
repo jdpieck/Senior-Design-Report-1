@@ -44,18 +44,24 @@ We immediately ruled out the Spray, Brush/Squeegee, and Sponge methods, as they 
 
 #decision-matrix("applicator-selection.csv")
 
-For the adhesive applicator, we prioritized predictability and low blockage in our evaluation. This would guarantee that the modules produced are consistent and effective. Concepts like the Screenprint and Dot Stencil applicators were likely incompatible with non-solvent adhesives and also performed lower in our criteria in @applicator-selection-matrix, ruling them out. 
+For the adhesive applicator, we prioritized predictability and low blockage in our evaluation. This would guarantee that the modules produced are effective at exchanging heat. Concepts like the Screen print and Dot Stencil applicators were likely incompatible with non-solvent adhesives and also performed lower in our criteria in @applicator-selection-matrix, ruling them out. The dip bed also performed lowest in our evaluation, leading us to disqualify it and leaving us with the roller and stamp applicators.
 
 == Lamina Application Selection
 
 
 #decision-matrix("apply-lamina.csv")
+We prioritized Consistent Application, Glue Placement Integrity, and Automation to ensure high-quality, high-speed production. The *Roller Mechanism* (@RollerLaminaApplication) ranked first (287) due to its superior automation potential and high reliability. The *Rotating Frame* (@RotatingFrameLaminaApplication) followed closely (275), selected for its consistency despite a lower automation score. Both were chosen for development, while the Slide off Ramp and Hand Apply methods were ruled out. 
 
 // #pagebreak()
 == Feed Selection
-For the system feed mechanism, we opted to investigate the *Locking Belt* (@LockingBelt_Peter). This design offers the same functions as the powered rollers and more simple, powered belt, with the benefit of being more secure. 
 
 #decision-matrix("feed.csv")
+For the system feed mechanism, we opted to investigate the *Locking Belt* (@LockingBelt_Peter). This design offers the same functions as the powered rollers and more simple, powered belt, with the benefit of being more secure. 
 == Clamping Mechanism Selection
 
 #decision-matrix("lamina-clamp.csv")
+
+For the lamina clamping mechanism, we placed a heavy emphasis on a high clamping force and even pressure distribution (see @lamina-clamp-matrix). These criteria ensure that the lamina and plates are properly bonded and capable of handling fluids at >10psig. It is also critical that the lamina be properly aligned on the plate, which was a contributing factor to our selection of the *Alignment Pin* design. We also selected the *Top Clamping* design because it offers unparalleled clamping force and pressure distribution
+
+=== Systems Engineering Loop and Tradeoffs
+For our design, we repeatedly found ourselves circling back to our adhesive choice as it largely influences 

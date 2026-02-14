@@ -5,7 +5,7 @@ applicators:
 
   - title: Dip Bed
     path: "Dip Bed.jpg"
-    description: Dips the plate into the adhesive
+    description: After being loaded with the plate ridges facing down, the mechanism would slowly lower the plate. The plate would be continue to lower until reaching until only the plate ridges have been submerged, applying a thin layer of adhesive (the surface of the adhesive vat would be flat, unlike in sketch).
     
   - title: Stamp onto Plate
     path: "Stamp_Plate.png" 
@@ -22,7 +22,7 @@ applicators:
 
   - title: Dot Stencil
     path: "DotStencil_Patrick.png"
-    description: A stencil consisting of many small holes in the shape of the channels onto the lamina. A squeegee or simiar device would evenly apply glue through the stencil.
+    description: A stencil consisting of many small holes in the shape of the channels to be placed onto the lamina. A squeegee or simiar device would evenly apply glue through the stencil.
     
     
 jig:
@@ -38,13 +38,13 @@ jig:
     path: "side clips.png" 
     description: "An alternate solution for holding the MPHX in place is to use clips to hold onto the side railing. The clips would be placed in the center of the MPHX, acting similarly to the clips at the top of clipboards. A downward pressure on the clip would release the side clip's hold. To input a plate, an individual would slide the MPHX plate onto the carriage tray while applying pressure to the clips holding it up. This design emphasizes the holding of the railing to keep the MPHX still while the adhesive is applied."
 
-  - title: Pull Mechanism
-    path: "Screw Clamp.jpg"
-    description: This jig design puts the plate under tension, preventing the plate from moving while remaining completely flush.
+  - title: Stretch Mechanism
+    path: "Stretch Mechanism.jpg"
+    description: This jig design puts the plate under tension by placing two pillars within the water flow channels of the MPHX, and moving them apart from eachother. While there is risk of damaging the plates, adding a sligh force away using a ball-screw-like mechanism would prevent the plate from moving while remaining completely flush.
     
   - title: Screw Clamp
     path: "Screw Clamp.jpg"
-    description: This jig design uses standard machine screws to hold the plate in place. A variety of different screws could be used to create different head profiles.
+    description: This jig design uses standard machine screws to hold the plate in place. A variety of different screws could be used to create different head profiles, saying low and out of the way of adhesive applicators.
 
 lamina-application:
     
@@ -63,7 +63,7 @@ lamina-application:
 lamina-clamp:
   - title: C-Clamp
     path: "c clamp sketch.png" 
-    description: To keep the lamina and adhesive together during the drying process, a c-clamp (or two) would be used to hold the MPHX plate, its holder, and the lamina together.
+    description: To keep the lamina and adhesive together during the drying process, one or more c-clamps would hold the MPHX plate, its holder, and the lamina together.
 
   - title: Side Flip Clamps
     path: "SideLaminaClamps.PNG" 
@@ -71,7 +71,7 @@ lamina-clamp:
 
   - title: Lever Clamping
     path: "Lever Clamp.jpg"
-    description: Using comercial lever clamps, the lamina can be secured with high forces ontop of the plate. 
+    description: Using comercially-available lever clamps, the lamina can be secured with high forces ontop of the plate. Level clamps are often desired for their ease of use, and multiple can be mounted.  
     
   - title: Alignment Pins
     path: "AignmentPins_Leah.png" 

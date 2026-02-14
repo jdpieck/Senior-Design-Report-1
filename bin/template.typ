@@ -22,8 +22,10 @@
 
   set grid(
     fill: none,
-    gutter: 1em,
-    inset: .9em,
+    // gutter: 3%,
+    column-gutter: 3%,
+    row-gutter: 4%,
+    // inset: .9em,
     // stroke: black
     // stroke: (x, y) => (
     //   left: if x == 1 { 0pt } else { gray },
