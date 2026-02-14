@@ -70,54 +70,46 @@
 
 #let screening-matrix(path) = {
   let data = csv("../matrices/" + path, delimiter: "\t")
-  // show table.cell: set align(left)
+  let invert(int) = data.len() + int
 
   show table.cell.where(y: 0): it => rotate(-90deg, it)
   show table.cell.where(y: 0, x: 0): it => rotate(90deg, it)
   show table.cell.where(y: 0): set align(bottom)
+  show table.cell.where(y: 0): strong
+  show table.cell.where(x: 0, y: invert(-1)): strong
+  show table.cell.where(x: 0, y: invert(-2)): strong
   show table.cell.where(x: 0): set align(left)
 
-  
   set table(
-    // stroke: (x, y) => (
-      // bottom: {
-      //   // if y > 1 {black}
-      //   if (
-      //     y == 0 or
-      //     y == 1 or 
-      //     y == invert(-1) or
-      //     y == invert(-2) or
-      //     y == invert(-4)
-      //       ) {black} 
-      // },
-      // right: {
-      //   if y > 0 and y < invert(-3) {
-      //     if calc.rem(x, 2) == 1 {black}
-      //     else {black + .3pt}
-      //   }
-      //   if y <= 0 or y > invert(-4) {
-      //     if calc.rem(x, 2) == 0 {black}
-      //   }
-      // }
-    // )
+    stroke: (x, y) => (
+      bottom: {
+        if (
+          y == 0 or
+          y == invert(-1) or
+          y == invert(-2) or
+          y == invert(-3)
+            ) {black} 
+      },
+      right: {
+         black
+      }
+    )
   )
-  
 
-  figure(
+  [#figure(
     table(
       columns: (auto, ..(3em, )*(data.at(0).len() - 1)),
       ..data.flatten()
     ),
-    caption: []
-  )
+    caption: data.at(0).at(0) + " Screening Matrix"
+  ) #label(path.split(".").at(0) + "-matrix")]
 
 }
 
 #let decision-matrix(path) = {
   let data = csv("../matrices/" + path, delimiter: "\t")
   data.last().last() = data.last().last().split(",").at(0)
-  let num-rows = data.len()
-  let invert(int) = num-rows + int
+  let invert(int) = data.len() + int
   
   set text(9pt)
   set par(justify: false)
@@ -176,6 +168,25 @@
 
 #let accent = rgb("#063e7e")
 
+#let standard-table(body) = {
+  show table.cell.where(y: 0): set text(white, weight: "bold")
+  show table.cell.where(y: 0): it => math.bold(it)
+  show table.cell: set align(left)
+
+  show table.cell.where(x: 0): strong
+  
+  set table(
+    inset: .6em,
+    fill: (x,y) =>
+      if y == 0 {accent},
+  // stroke: frame(none),
+  // stroke: (x,y) => (
+  //   left: if x == 1 {gray}
+  //   )
+  )
+  body
+}
+
 #let template(
   title: "", 
   class: "EME-185A/B", 
@@ -211,6 +222,7 @@
     lang: "en",
     size: 11pt,
   )
+  show math.equation: set text(font: "IBM Plex Math", size: 11pt)
 
   set par(leading: .6em)
   set rotate(reflow: true)

@@ -6,20 +6,15 @@ Heat exchangers may operate between two liquids, a liquid and a gas, or two gas 
 
 	The heat exchanger considered in this project consists of stacks of identical modules. Each unit is constructed from an injection-molded Microchannel Polymer Heat Exchanger (MPHX) plate made of ABS plastic and a thin polycarbonate film (lamina) bonded to one side of the plate. The film seals internal channels allowing water to flow through the module. Multiple modules are stacked and bonded together, forming continuous water passages and air gaps between plates that permit airflow through the exchanger @ValentinaThesis.
 
+ == The Task
+
 The primary task of this project is to identify suitable materials and assembly methods for bonding the heat exchanger units. Specifically, the project focuses on selecting an appropriate adhesive and/or solvent and defining a reliable application process that satisfies the following design constraints:
 
 - The adhesive must not significantly clog or obstruct water flow passages.
-
 - The adhesive must be compatible with the ABS MPHX plates and PC film.
-
 - A method must be developed to maintain plate flatness during adhesive application and curing, accounting for manufacturing-induced warpage.
-
 - Part alignment must be maintained within a tolerance of ±0.5 mm.
-
 - Adhesive application must be semi-automated and predictable for manufacturing scalability.
-
 - A clamping method must be implemented to ensure proper bonding during curing.
-
 - The bonded assembly must withstand internal water pressures of at least 10 psig without leakage.
-
 - The adhesive and bonded joints must tolerate repeated temperature and pressure cycling over the expected service life of the product.

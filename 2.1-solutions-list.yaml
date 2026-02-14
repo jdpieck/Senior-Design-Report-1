@@ -9,7 +9,7 @@ applicators:
     
   - title: Stamp onto Plate
     path: "Stamp_Plate.png" 
-    description: This version of the stamp design stamps adhesive directly to the MPHX plate. The stamp itself has contours which match the ridges of the plate where adhesive should be applied. The stamp would be dipped into a soaked sponge or bed of adhesive between cycles.
+    description: This version of the stamp design stamps adhesive directly to the MPHX plate. The stamp itself has contours that match plate ridges where adhesive is to be applied. The stamp would be dipped into a soaked sponge or bed of adhesive between cycles.
 
  # - title: Stamp onto Lamina
  #    path: "Stamp_Lamina.png" 

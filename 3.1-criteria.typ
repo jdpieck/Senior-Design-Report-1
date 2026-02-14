@@ -1,27 +1,14 @@
 #import "bin/template.typ": *
-#show table: set par(justify: false) 
-#show table: set align(left)
-#show table.cell.where(y: 0): set text(white, weight: "bold")
-#show table.cell.where(y: 0): it => math.bold(it)
-// show table.cell.where(y: 1): set table.cell(fill: blue)
-#set table(
-fill: (x,y) =>
-  if y == 0 {accent},
-// stroke: frame(none),
-// stroke: (x,y) => (
-  // left: if x == 1 {gray}
-  // )
-)
-#show table.cell.where(x: 0): set align(center)    
-  
-#show table: set list(indent: .3em)
+#show: standard-table
+
+
 #show table.cell.where(x: 0): set align(center + horizon)
 #show table.cell.where(y: 0): set align(center + horizon)
-#set table(inset: .6em)
+
 
 #figure(
   table(
-    columns: (4em, 1fr, 1fr, 1fr), 
+    columns: (3em, 1fr, 1fr, 1fr), 
     // rows: 3,
     none, 
     [Must Have], [Should Have], [Nice to Have],
@@ -65,7 +52,9 @@ fill: (x,y) =>
 
 == Evaluation Criteria Key
 #let data = csv("criteria.csv")
+#set text(.85em)
 
+#show: standard-table
 #figure(
 table(
   columns: data.first().len(),

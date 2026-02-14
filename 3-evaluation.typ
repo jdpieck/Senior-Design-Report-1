@@ -29,7 +29,7 @@ Based on our preliminary research, our team has selected the following adhesives
       columns: data.at(0).len(),
       ..data.flatten().map(it => eval(it, mode: "markup"))
     ),
-    caption: []
+    caption: [Adhesives selected for further evaluation.]
   )
 
 }
@@ -42,7 +42,7 @@ Based on our preliminary research, our team has selected the following adhesives
 #decision-matrix("jig.csv")
 // #pagebreak()
 == Adhesive Application Selection
-When deciding on mechanisms to apply adhesives, we heavily prioritized designs that would be compatible with all of our adhesive options, ultimately leading to the selection of the *Roller and Stamp Applicators*, (@Roller_Peter and @Stamp_Plate respectively). The stamp and the roller should both be viable regardless of adhesive viscosity. They both allow for up to 5 plates to be processed at a time, which falls in line with our sponsor's prioritization of production rate. 
+When deciding on mechanisms to apply adhesives, we heavily prioritized designs that would be compatible with all of our adhesive options, ultimately leading to the selection of the *Roller and Stamp Applicators*, (@Roller_Peter and @Stamp_Plate, respectively). The stamp and the roller should both be viable regardless of adhesive viscosity. They both allow for up to 5 plates to be processed at a time, which falls in line with our sponsor's prioritization of production rate. 
 
 // Insert screening matrix here
 
