@@ -17,34 +17,34 @@ Additional challenges considered:
 These challenges have motivated us to consider application methods that enable the accurate application of adhesive and a feed mechanism to carry our parts from subassembly to subassembly. 
 
 == Adhesive Choice <Adhesive-Choice>
-In order to explore potential solutions for the glue jig we had to first determine the limitations of potential adhesives. These limitations included things like accessibility, ease of use, and effectiveness. The adhesive options were narrowed down to 3 types due to the material limitations of binding ABS (plates) and polycarbonate (lamina). The three adhesive types we determined to be the best for the project are two-part epoxy, one-part adhesive, and solvent. The chosen adhesive will influence the entire glue system, since certain processes are non compatible with particular methods of application, movement, and storage.
+In order to explore potential solutions for the glue jig, we had to first determine the limitations of potential adhesives. These limitations included things like accessibility, ease of use, and effectiveness. The adhesive options were narrowed down to 3 types due to the material limitations of binding ABS (plates) and polycarbonate (lamina). The three adhesive types we determined to be the best for the project are two-part epoxy, one-part adhesive, and solvent (see @Adhesive_Selection). The chosen adhesive will influence the entire glue system, since certain processes are incompatible with particular methods of application, movement, and storage. Based on product data sheets, the following list of adhesives was chosen for further testing (see @glue-specs).
 
 #let product-specs(path) = {
   let data = csv("matrices/" + path, delimiter: "\t")
   show: standard-table
   
-  figure(
+  [#figure(
     table(
       // columns: data.at(0).len(),
       columns: (1fr, 5em, 5em, 1fr, 5em, 5em, 5em, 3em),
       ..data.flatten().map(it => eval(it, mode: "markup"))
     ),
     caption: [Adhesives selected for further evaluation.]
-  )
+  ) #label(path.split(".").at(0))]
 }
 
 #product-specs("glue-specs.csv")
 
 #pagebreak()
 == Jig <Jig>
-The jig's main purpose is to hold the MPHX plates flat and stationary so that the feed mechanism can transport the plates throughout the glue and lamina application process. The primary requirements are that the jig has to hold the MPHX plates securely as well as leave the water side of the plate open for adhesive and lamina application. This is important to make sure the MPHX plates are not free to shift. Shifting and non secured plates may result in misalignment during the adhesive and lamina application processes, causing the entire glue to system to be ineffective. The type of jig used influences the types of feasible adhesive and lamina applications as well as the potential feed systems and clamping mechanisms.
+The jig's main purpose is to hold the MPHX plates flat and stationary so that the feed mechanism can transport the plates throughout the glue and lamina application process. The primary requirements are that the jig has to hold the MPHX plates securely as well as leave the water side of the plate open for adhesive and lamina application. This is important to make sure the MPHX plates are not free to shift. Shifting and non- secured plates may result in misalignment during the adhesive and lamina application processes, causing the entire glue to system to be ineffective. The type of jig used influences the types of feasible adhesive and lamina applications as well as the potential feed systems and clamping mechanisms.
 
 #solution-grid(yaml("2.1-solutions-list.yaml").jig)
 
 
 #pagebreak()
 == Adhesive Application Method <Adhesive-Application>
-The adhesive application subsystem is used to apply the chosen adhesive to the MPHX plates. Applicators must evenly distribute the adhesive onto the upper ridges of the plates while they are held by the jig. This subsystem includes how and where the adhesive is stored, the location and amount of adhesive applied, and the method used to apply the adhesive to the MPHX plates. The chosen application system influences the overall effectiveness and accuracy of the adhesive to the lamina.
+
 
 
 #solution-grid(yaml("2.1-solutions-list.yaml").applicators)

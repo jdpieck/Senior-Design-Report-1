@@ -1,5 +1,29 @@
+// #import "bin/template.typ": *
+// #show table.cell.where(x:0): it => text(it, weight: 40)
 #set text(.85em)
-#show table.cell: set align(left)
+
+#let accent = rgb("#063e7e")
+
+#let standard-table(body) = {
+  show table.cell.where(y: 0): set text(white, weight: "bold")
+  show table.cell.where(y: 0): it => math.bold(it)
+  show table.cell: set align(left)
+
+  // show table.cell.where(x: 0): strong
+  
+  set table(
+    inset: .6em,
+    fill: (x,y) =>
+      if y == 0 {accent},
+  stroke: luma(50%),
+  // stroke: (x,y) => (
+  //   left: if x == 1 {gray}
+  //   )
+  )
+  body
+}
+
+#show: standard-table
 
 #figure(
   table(

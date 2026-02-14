@@ -7,7 +7,7 @@ Testing will use a simplified setup with ABS pipe (½ in. ID, 1 in. OD). In the 
 
 
 == Preliminary Calculations
-=== Calculation 1: Batch Sizing
+=== Batch Sizing
 - Width of standalone plate: $w = 5 "cm"$
 - Width of plate with rails: $w_r = 6 "cm"$
 - Minimum gap between plates: $g_p = 1 "cm"$
@@ -18,10 +18,10 @@ Plate holding jig minimum width:
 $ W_j = (n)(w_r) + (n+1)(g_p) $
 
 Example: 4 plates
-$ W_j = (4)(6) + (4+1)(1) $
-$ W_j = 29 "cm" $
+$ W_j &= (4)(6 "cm") + (4+1)(1 "cm") \
+ &= 29 "cm" $
 
-=== Calculation 2: Cycle Time
+=== Cycle Time
 - Cycle Time $T$: The time it takes for one module to be produced using system 1
 - Batch Size $S$: The size of a single batch per cycle
 
@@ -32,14 +32,14 @@ We are only considering the variation in cycle times between the applicators in 
 
 *Stamp:* We assume the stamp can process 3 modules per cycle and each cycle takes 5 seconds to apply adhesive and another 5 seconds to resupply for the next batch.
 
-$ T = 5 + 5 + 90 $
-$ T = 100 "seconds" "(1 min, 40 seconds)" $
-$ "Total Amount Produced Per Hour" = 3 dot ((3600 "s")/(100 "s")) = 108 "Modules/hour" $
+$ T &= 5 "s" + 5 "s" + 90 "s" \
+  &= 100 "seconds" "(1 min, 40 seconds)" $
+$ "Total Amount Produced Per Hour" = 3 dot ((3600 "s/h")/(100 "s/Module")) = 108 "Modules/hour" $
 
 *Roller:* We assume the roller can process 4 modules per cycle and each cycle takes 5 seconds to complete. The roller automatically resupplies with adhesive so there is not resupply time.
 
-$ T = 5 + 90 $
-$ T = 95 "seconds" "(1 min, 35 seconds)" $
+$ T &= 5 "s" + 90 "s" \
+  &= 95 "seconds" "(1 min, 35 seconds)" $
 $ "Total Modules Prodcued Per Hour" = 4 dot ((3600 "s")/(95 "s")) = 151 "Modules/hour" $
 
 From these calculations, we can see that the roller will likely have an advantage in terms of production rate. The feature of automatically reapplying adhesive to the roller adds some benefit, but really it may not even matter if the rate of loading new modules bottlenecks the process. The real advantage is the roller's capacity to process more modules per batch.

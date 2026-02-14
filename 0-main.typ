@@ -6,7 +6,7 @@
   team-number: "17",
   project-name: "Glue Dispensing Jig for Novel Polymer Heat Exchanger Fin Plates", 
   ta-contact: "Angel Rodas",
-  professor-contact: "Jonathon Schofield", 
+  professor-contact: "Dr. Jonathon Schofield", 
   authors: (
     (name: "Patrick Abrash", id: "920893423"),
     (name: "Keira Godfrey", id: "920712384"),
@@ -28,7 +28,7 @@
 #pagebreak()
 = Discussion and Trade-Offs Analyses for Candidate Designs<Evaluations> 
 
-To guide the evaluation of candidate designs, the system requirements have been organized into a prioritization framework. The requirements are divided into System Functions, which define what the system must do, and System Qualities, which describe how well the system must perform. Each requirement is further categorized as Must Have, Should Have, or Nice to Have to clarify its relative importance and support informed trade-off decisions during design selection. Table 2 summarizes these requirements.
+To guide the evaluation of candidate designs, we organized the system requirements into a prioritization framework. The requirements are divided into _system functions_, which define what the system must do, and _system qualities_, which describe how well the system must perform. Each requirement is further categorized as _must have_, _should have_, or _nice to have_ to clarify its relative importance and support informed trade-off decisions during design selection. @citeria summarizes these requirements.
 
 #include "3-evaluation.typ"
 
@@ -40,5 +40,6 @@ To guide the evaluation of candidate designs, the system requirements have been 
 = Preliminary Calculations and Feasibility Tests <feasiblity>
 #include "5-feasibilty.typ"
 
+#pagebreak()
 = Objective Statement
 #include "6-objective.typ"

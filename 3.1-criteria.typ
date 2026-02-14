@@ -1,10 +1,8 @@
 #import "bin/template.typ": *
 #show: standard-table
 
-
 #show table.cell.where(x: 0): set align(center + horizon)
 #show table.cell.where(y: 0): set align(center + horizon)
-
 
 #figure(
   table(
@@ -48,5 +46,5 @@
     ],
   ),
   caption: [System requirements, broken into functions and qualities. ]
-)
+) <citeria>
 

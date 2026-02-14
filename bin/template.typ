@@ -5,11 +5,11 @@
 )
 
 #let appendix(body) = {
-    set heading(numbering: "A.A", supplement: [Appendix])
+  set heading(numbering: "A.A", supplement: [Appendix])
   
   show heading.where(level: 1): it => {
     pagebreak()
-    [Appendix #counter(heading).display("A -") #it.body]
+    block[Appendix #counter(heading).display("A -") #it.body]
   }
   counter(heading).update(0)
   body
@@ -18,7 +18,6 @@
 #let solution-grid(entries) = {
   
   show image: set block(radius: 5pt, clip: true)
-  // show figure.caption: set text(weight: "regular")
 
   set grid(
     fill: none,
@@ -34,6 +33,7 @@
     //   bottom: gray,
     // ),
   )
+  
   set heading(
     numbering: none,
     outlined: false
@@ -92,10 +92,10 @@
           y == invert(-1) or
           y == invert(-2) or
           y == invert(-3)
-            ) {black} 
+            ) {luma(40%)} 
       },
       right: {
-         black
+         luma(40%)
       }
     )
   )
@@ -121,22 +121,21 @@
   set table(
     stroke: (x, y) => (
       bottom: {
-        // if y > 1 {black}
         if (
           y == 0 or
           y == 1 or 
           y == invert(-1) or
           y == invert(-2) or
           y == invert(-4)
-            ) {black} 
+            ) {luma(40%)} 
       },
       right: {
         if y > 0 and y < invert(-3) {
-          if calc.rem(x, 2) == 1 {black}
-          else {black + .3pt}
+          if calc.rem(x, 2) == 1 {luma(40%)}
+          else {luma(80%)}
         }
         if y <= 0 or y > invert(-4) {
-          if calc.rem(x, 2) == 0 {black}
+          if calc.rem(x, 2) == 0 {luma(40%)}
         }
       }
     )
@@ -149,7 +148,7 @@
   show table.cell.where(y: 1): set align(bottom)
 // show table.cell.where(y: invert(-2)): set table.cell(inset: 3em)
   show table.cell.where(y: invert(-2)): it => {v(-0.3em) + it }
-  show table.cell.where(x: 0, y: 1): it => align(bottom, rotate(reflow: true,270deg, it))
+  show table.cell.where(x: 0, y: 1): it => align(bottom, rotate(reflow: true,-270deg, it))
 
   [#figure(
     caption: data.first().first() + " Selection Matrix",
@@ -160,7 +159,7 @@
         .filter(it => it != "")
         .map(it => table.cell(colspan: 2, it))
       ),
-      ..data.at(1).map(it => rotate(reflow: true, 90deg, it)),
+      ..data.at(1).map(it => rotate(reflow: true, -90deg, it)),
       ..data.slice(2, -3).flatten(),
       ..data.slice(-3)
             .flatten()
@@ -183,10 +182,7 @@
     inset: .6em,
     fill: (x,y) =>
       if y == 0 {accent},
-  // stroke: frame(none),
-  // stroke: (x,y) => (
-  //   left: if x == 1 {gray}
-  //   )
+    stroke: luma(50%),
   )
   body
 }
@@ -381,10 +377,10 @@
   terms(..csv("../def.csv").sorted(), separator: [ -- ])
   // show grid.cell.where(x:0): set align(right) 
   // show grid.cell.where(x:0): strong
-  grid(
-    columns: 2,
-    gutter: 1%,
-  ..csv("../def.csv").sorted().flatten())
+  // grid(
+  //   columns: 2,
+  //   gutter: 1%,
+  // ..csv("../def.csv").sorted().flatten())
 
   pagebreak()  
   body // Main body
