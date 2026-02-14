@@ -13,16 +13,16 @@ applicators:
 
  # - title: Stamp onto Lamina
  #    path: "Stamp_Lamina.png" 
- #    description: "This verison of the stamp design stamps the pattern of the ridges directly to the lamina. The lamina would then be placed on top of the plate's ridges. Between cylcles, the stamp would lower into a bed of adhesive."
+ #    description: "This version of the stamp design stamps the pattern of the ridges directly to the lamina. The lamina would then be placed on top of the plate's ridges. Between cycles, the stamp would lower into a bed of adhesive."
 
   - title: Screenprint 
     path: "SilkscreenAdhesiveApplication.PNG" 
-    description: This application method is very similar to the typical screenprinting process, but by substituting ink for our chosen adhesive. On a prepared and otherwise opaque silkscreen, there are permeable areas in the shape of the MPHX ridges. Using a squeegee, the adhesive will permeate the membrane and apply a set amount of adhesive to the lamina in our desired application pattern. 
+    description: This application method is very similar to the typical screen-printing process, but by substituting ink for our chosen adhesive. On a prepared and otherwise opaque silkscreen, there are permeable areas in the shape of the MPHX ridges. Using a squeegee, the adhesive will permeate the membrane and apply a set amount of adhesive to the lamina in our desired application pattern. 
 
 
   - title: Dot Stencil
     path: "DotStencil_Patrick.png"
-    description: A stencil consisting of many small holes in the shape of the channels to be placed onto the lamina. A squeegee or simiar device would evenly apply glue through the stencil.
+    description: A stencil consisting of many small holes in the shape of the channels to be placed onto the lamina. A squeegee or similar device would evenly apply glue through the stencil.
     
     
 jig:
@@ -40,7 +40,7 @@ jig:
 
   - title: Stretch Mechanism
     path: "Stretch Mechanism.jpg"
-    description: This jig design puts the plate under tension by placing two pillars within the water flow channels of the MPHX, and moving them apart from eachother. While there is risk of damaging the plates, adding a sligh force away using a ball-screw-like mechanism would prevent the plate from moving while remaining completely flush.
+    description: This jig design puts the plate under tension by placing two pillars within the water flow channels of the MPHX, and moving them apart from each other. While there is risk of damaging the plates, adding a slight force away using a ball-screw-like mechanism would prevent the plate from moving while remaining completely flush.
     
   - title: Screw Clamp
     path: "Screw Clamp.jpg"
@@ -54,7 +54,7 @@ lamina-application:
 
   - title: Ramp 
     path: "RampLaminaApplication.PNG" 
-    description: A sheet of lamina is suspended over a ramp above the feed mechanism. As the MPHX plate and holding plate approaches the ramp, the clipboard-like mechanism holding the lamina is released, allowing the lamina to slide down the ramp. At the end of the ramp, the lamina lands on top of the holding plate and MPHX plate as the feed machanism move past and underneath via the feed system.
+    description: A sheet of lamina is suspended over a ramp above the feed mechanism. As the MPHX plate and holding plate approaches the ramp, the clipboard-like mechanism holding the lamina is released, allowing the lamina to slide down the ramp. At the end of the ramp, the lamina lands on top of the holding plate and MPHX plate as the feed mechanism move past and underneath via the feed system.
 
   - title: Rotating Frame
     path: "RotatingFrameLaminaApplication.PNG" 
@@ -71,7 +71,7 @@ lamina-clamp:
 
   - title: Lever Clamping
     path: "Lever Clamp.jpg"
-    description: Using comercially-available lever clamps, the lamina can be secured with high forces ontop of the plate. Level clamps are often desired for their ease of use, and multiple can be mounted.  
+    description: Using commercially-available lever clamps, the lamina can be secured with high forces on top of the plate. Level clamps are often desired for their ease of use, and multiple can be mounted.  
     
   - title: Alignment Pins
     path: "AignmentPins_Leah.png" 
@@ -84,7 +84,7 @@ lamina-clamp:
 feed: 
   - title: Powered Rollers
     path: "PoweredRollers_Peter.png" 
-    description: This feed mechanism uses powered rollers to move a tray of MPHX plates along a track. The rollers could span the length of the tray or be canitlevered as pictured. 
+    description: This feed mechanism uses powered rollers to move a tray of MPHX plates along a track. The rollers could span the length of the tray or be cantilevered as pictured. 
 
   - title: Powered Belt
     path: "PoweredBelt_Peter.png" 
@@ -118,4 +118,4 @@ appendix:
     
   - title: Squeegee (Adhesive Application)
     path: "Squeegee_Leah.png" 
-    description: A squeegee applies a uniform thickness of adhesive on the lamina. The queegee is controlled by a motorized sliding jig. 
+    description: A squeegee applies a uniform thickness of adhesive on the lamina. The squeegee is controlled by a motorized sliding jig. 

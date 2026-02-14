@@ -40,6 +40,6 @@ $ "Total Amount Produced Per Hour" = 3 dot ((3600 "s/h")/(100 "s/Module")) = 108
 
 $ T &= 5 "s" + 90 "s" \
   &= 95 "seconds" "(1 min, 35 seconds)" $
-$ "Total Modules Prodcued Per Hour" = 4 dot ((3600 "s")/(95 "s")) = 151 "Modules/hour" $
+$ "Total Modules Produced Per Hour" = 4 dot ((3600 "s")/(95 "s")) = 151 "Modules/hour" $
 
 From these calculations, we can see that the roller will likely have an advantage in terms of production rate. The feature of automatically reapplying adhesive to the roller adds some benefit, but really it may not even matter if the rate of loading new modules bottlenecks the process. The real advantage is the roller's capacity to process more modules per batch.
