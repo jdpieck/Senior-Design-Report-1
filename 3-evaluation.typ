@@ -3,26 +3,25 @@
 #include "3.1-criteria.typ"
 
 == Adhesive Selection <Adhesive_Selection>
-Based on our preliminary research, our team has selected the following adhesives for compatibility testing within our design. More information about the testing procedure is in @feasiblity.
-
+Based on our preliminary research in @Adhesive-Choice, our team used a screening matrix as seen in @glue-screening-matrix, ruling out contact cement as it had heavy disadvantages compared to the other options. 
 
 
 #screening-matrix("glue-screening.csv")
-
 
 #let comparison-table(path) = {
   show: standard-table
   let data = csv("matrices/" + path, delimiter: "\t")
 
-  figure(
+  [#figure(
     table(
       columns: data.at(0).len(),
       ..data.flatten().map(it => eval(it, mode: "markup"))
     ),
     caption: [Adhesive Comparison Table]
-  )
+  ) <adhesive-comparison>]
 }
-As shown above in @glue-screening-matrix, we were able to rule out contact cement as it had heavy disadvantages compared to the other options.
+
+Due to the challenging and nuanced nature of adhesives, we opted to forgo a selection matrix for to compatibility testing within our design. More information about the testing procedure is in @feasiblity. From the information that we were able to gather online (@glue-specs), we were able to determine the following about the selected adhesives (@adhesive-comparison).
 
 #comparison-table("glue-evaluation.csv")
 
@@ -41,11 +40,12 @@ Using the screening matrix in @applicator-screening-matrix, we immediately ruled
 
 #screening-matrix("applicator-screening.csv")
 
-For the adhesive applicator, we prioritized predictability and low blockage in our evaluation. This would guarantee that the modules produced are effective at exchanging heat. Concepts like the screen printing (@SilkscreenAdhesiveApplication) and dot stencil applicators (@DotStencil_Patrick) are likely incompatible with non-solvent adhesives and also performed lower for the criteria in @applicator-selection-matrix, ruling them out. The dip bed also performed lowest in our evaluation due to its unpredictable design attributes. This left the most viable options as the *Roller* and *Stamp*.
+#pagebreak()
+For the adhesive applicator, we prioritized predictability and low blockage in our evaluation. This would guarantee that the modules produced are effective at exchanging heat. Concepts like the screen printing (@SilkscreenAdhesiveApplication) and dot stencil applicators (@DotStencil_Patrick) are likely incompatible with non-solvent adhesives and also performed lower for the criteria in @applicator-selection-matrix, ruling them out. The dip bed also performed lowest in our evaluation due to its unpredictable design attributes. This left the most viable options as the *Roller* (@Roller_Peter) and *Stamp* (@Stamp_Plate).
 
 #decision-matrix("applicator-selection.csv")
 
-
+#pagebreak()
 == Lamina Application Selection
 For the lamina, we prioritized consistent application, clue placement integrity, and automation to ensure high-quality, high-speed production. As seen in @apply-lamina-matrix, the *Roller Mechanism* (@RollerLaminaApplication) ranked first due to its superior automation potential and high reliability. The *Rotating Frame* (@RotatingFrameLaminaApplication) followed closely, and we opted to select it for its consistency despite a lower automation score. The Slide off Ramp and Hand Apply methods were ruled out. 
 
